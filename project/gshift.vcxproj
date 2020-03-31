@@ -19,7 +19,15 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\src\ChangeGravityIC.cpp" />
+    <ClCompile Include="..\src\ConstantMovementC.cpp" />
     <ClCompile Include="..\src\gshift.cpp" />
+    <ClCompile Include="..\src\SpikeEC.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\ChangeGravityIC.h" />
+    <ClInclude Include="..\src\ConstantMovementC.h" />
+    <ClInclude Include="..\src\SpikeEC.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -82,7 +90,7 @@
     <LinkIncremental>true</LinkIncremental>
     <TargetName>$(ProjectName)_d</TargetName>
     <OutDir>$(SolutionDir)bin\</OutDir>
-    <IntDir>$(SolutionDir)inter\$(Platform)\$(Configuration)\$(ProjectName)</IntDir>
+    <IntDir>$(SolutionDir).temp\$(Platform)\$(Configuration)\$(ProjectName)</IntDir>
     <IncludePath>$(SolutionDir)src\$(ProjectName);$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -93,7 +101,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(SolutionDir)bin\</OutDir>
-    <IntDir>$(SolutionDir)inter\$(Platform)\$(Configuration)\$(ProjectName)</IntDir>
+    <IntDir>$(SolutionDir).temp\$(Platform)\$(Configuration)\$(ProjectName)</IntDir>
     <IncludePath>$(SolutionDir)src\$(ProjectName);$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -104,6 +112,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)deps\one-thousand-years\P3\ProyectoBase\Src\Engine;$(SolutionDir)deps\one-thousand-years\P3\ProyectoBase\lib\jsoncpp-master\include;$(SolutionDir)deps\one-thousand-years\P3\ProyectoBase\lib\ogre-1.12.5\OgreMain\include;$(SolutionDir)deps\one-thousand-years\P3\ProyectoBase\lib\ogre-1.12.5\Build\include;$(SolutionDir)deps\one-thousand-years\P3\ProyectoBase\lib\ogre-1.12.5\Components\RTShaderSystem\include;$(SolutionDir)deps\one-thousand-years\P3\ProyectoBase\lib\bullet3-2.89\src;$(SolutionDir)deps\one-thousand-years\P3\ProyectoBase\lib\ogre-1.12.5\PlugIns\STBICodec\include;$(SolutionDir)deps\one-thousand-years\P3\ProyectoBase\lib\fmod\include;$(SolutionDir)deps\one-thousand-years\P3\ProyectoBase\lib\SDL2-2.0.10\include;$(SolutionDir)deps\one-thousand-years\P3\ProyectoBase\lib\jsoncpp-master\include\json;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -118,10 +127,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)deps\one-thousand-years\P3\ProyectoBase\Src\Engine;$(SolutionDir)deps\one-thousand-years\P3\ProyectoBase\lib\jsoncpp-master\include;$(SolutionDir)deps\one-thousand-years\P3\ProyectoBase\lib\ogre-1.12.5\OgreMain\include;$(SolutionDir)deps\one-thousand-years\P3\ProyectoBase\lib\ogre-1.12.5\Build\include;$(SolutionDir)deps\one-thousand-years\P3\ProyectoBase\lib\ogre-1.12.5\Components\RTShaderSystem\include;$(SolutionDir)deps\one-thousand-years\P3\ProyectoBase\lib\bullet3-2.89\src;$(SolutionDir)deps\one-thousand-years\P3\ProyectoBase\lib\ogre-1.12.5\PlugIns\STBICodec\include;$(SolutionDir)deps\one-thousand-years\P3\ProyectoBase\lib\fmod\include;$(SolutionDir)deps\one-thousand-years\P3\ProyectoBase\lib\SDL2-2.0.10\include;$(SolutionDir)deps\one-thousand-years\P3\ProyectoBase\lib\jsoncpp-master\include\json;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)deps\one-thousand-years\P3\ProyectoBase\libs</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Engine_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -134,6 +146,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)deps\one-thousand-years\P3\ProyectoBase\Src\Engine;$(SolutionDir)deps\one-thousand-years\P3\ProyectoBase\lib\jsoncpp-master\include;$(SolutionDir)deps\one-thousand-years\P3\ProyectoBase\lib\ogre-1.12.5\OgreMain\include;$(SolutionDir)deps\one-thousand-years\P3\ProyectoBase\lib\ogre-1.12.5\Build\include;$(SolutionDir)deps\one-thousand-years\P3\ProyectoBase\lib\ogre-1.12.5\Components\RTShaderSystem\include;$(SolutionDir)deps\one-thousand-years\P3\ProyectoBase\lib\bullet3-2.89\src;$(SolutionDir)deps\one-thousand-years\P3\ProyectoBase\lib\ogre-1.12.5\PlugIns\STBICodec\include;$(SolutionDir)deps\one-thousand-years\P3\ProyectoBase\lib\fmod\include;$(SolutionDir)deps\one-thousand-years\P3\ProyectoBase\lib\SDL2-2.0.10\include;$(SolutionDir)deps\one-thousand-years\P3\ProyectoBase\lib\jsoncpp-master\include\json;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -152,12 +165,15 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)deps\one-thousand-years\P3\ProyectoBase\Src\Engine;$(SolutionDir)deps\one-thousand-years\P3\ProyectoBase\lib\jsoncpp-master\include;$(SolutionDir)deps\one-thousand-years\P3\ProyectoBase\lib\ogre-1.12.5\OgreMain\include;$(SolutionDir)deps\one-thousand-years\P3\ProyectoBase\lib\ogre-1.12.5\Build\include;$(SolutionDir)deps\one-thousand-years\P3\ProyectoBase\lib\ogre-1.12.5\Components\RTShaderSystem\include;$(SolutionDir)deps\one-thousand-years\P3\ProyectoBase\lib\bullet3-2.89\src;$(SolutionDir)deps\one-thousand-years\P3\ProyectoBase\lib\ogre-1.12.5\PlugIns\STBICodec\include;$(SolutionDir)deps\one-thousand-years\P3\ProyectoBase\lib\fmod\include;$(SolutionDir)deps\one-thousand-years\P3\ProyectoBase\lib\SDL2-2.0.10\include;$(SolutionDir)deps\one-thousand-years\P3\ProyectoBase\lib\jsoncpp-master\include\json;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)deps\one-thousand-years\P3\ProyectoBase\libs</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Engine.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

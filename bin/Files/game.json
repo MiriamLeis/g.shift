@@ -17,7 +17,7 @@
           "type": "CameraRC",
           "attributes": {
             "node": "nCamera",
-            "viewportColour": [ 0, 0, 0 ],
+            "viewportColour": [ 0.1, 0.1, 0.1 ],
             "offset": [ 0, 0, 1000 ],
             "lookAt": [ 0, 0, -1 ],
             "targetId": "Player",
@@ -51,7 +51,7 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "PurpleColourMaterial"
+            "material": "PinkColourMaterial"
           }
         },
         {
@@ -72,9 +72,55 @@
           "type": "ChangeGravityIC",
           "attributes": {
             "speed": 200,
-            "materialL": "PurpleColourMaterial",
+            "materialL": "PinkColourMaterial",
             "materialR": "BlueColourMaterial"
           }
+        },
+        {
+          "type": "ConstantMovementC",
+          "attributes": {
+            "speed": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 0.5, 0.5, 1 ]
+
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "cube.mesh",
+            "node": "nCube",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 375, 200, 0 ],
+            "shape": [ 25, 25, 50 ],
+            "mass": 1,
+            "gravity": [ -50, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
         }
       ]
     },
@@ -94,7 +140,7 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "PurpleColourMaterial"
+            "material": "PinkColourMaterial"
           }
         },
         {
