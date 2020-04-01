@@ -35,6 +35,17 @@
       ]
     },
     {
+      "id": "GameManager",
+      "components":[
+        {
+          "type": "CoinCounterC",
+          "attributes":{
+            "totalCoins": 1
+          }
+        }
+      ]
+    },
+    {
       "id": "Player",
       "components": [
         {
@@ -50,7 +61,7 @@
           "type": "TridimensionalObjectRC",
           "attributes": {
             "mesh": "cube.mesh",
-            "node": "nCube",
+            "node": "nPlayer",
             "material": "PinkColourMaterial"
           }
         },
@@ -85,7 +96,51 @@
       ]
     },
     {
+      "id": "Coin",
+      "tag": "Coin",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 0.2, 0.2, 0.2 ]
+
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "sphere.mesh",
+            "node": "nCoin",
+            "material": "OrangeColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -375, 300, 0 ],
+            "shape": [ 20, 20, 20 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": true,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "CollectableEC",
+          "attributes": {
+            "value": 20
+          }
+        }
+      ]
+    },
+    {
       "id": "Spike",
+      "tag": "Spike",
       "components": [
         {
           "type": "TransformComponent",
@@ -100,7 +155,7 @@
           "type": "TridimensionalObjectRC",
           "attributes": {
             "mesh": "cube.mesh",
-            "node": "nCube",
+            "node": "nSpike",
             "material": "RedColourMaterial"
           }
         },
@@ -110,7 +165,7 @@
             "position": [ 375, 200, 0 ],
             "shape": [ 25, 25, 50 ],
             "mass": 1,
-            "gravity": [ -50, 0, 0 ],
+            "gravity": [ 0, 0, 0 ],
             "trigger": false,
             "kinematic": false,
             "static": true,

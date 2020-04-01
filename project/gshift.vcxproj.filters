@@ -21,6 +21,12 @@
     <ClCompile Include="..\src\ChangeGravityIC.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\CoinCounterC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\CollectableEC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="..\src\ConstantMovementC.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -30,6 +36,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\ChangeGravityIC.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\CoinCounterC.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\CollectableEC.h">
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="..\src\ConstantMovementC.h">
