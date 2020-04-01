@@ -23,6 +23,7 @@
     <ClCompile Include="..\src\CoinCounterC.cpp" />
     <ClCompile Include="..\src\CollectableEC.cpp" />
     <ClCompile Include="..\src\ConstantMovementC.cpp" />
+    <ClCompile Include="..\src\DeathControllerC.cpp" />
     <ClCompile Include="..\src\gshift.cpp" />
     <ClCompile Include="..\src\SpikeEC.cpp" />
   </ItemGroup>
@@ -31,6 +32,7 @@
     <ClInclude Include="..\src\CoinCounterC.h" />
     <ClInclude Include="..\src\CollectableEC.h" />
     <ClInclude Include="..\src\ConstantMovementC.h" />
+    <ClInclude Include="..\src\DeathControllerC.h" />
     <ClInclude Include="..\src\SpikeEC.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

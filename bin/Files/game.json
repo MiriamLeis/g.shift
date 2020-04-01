@@ -42,6 +42,10 @@
           "attributes":{
             "totalCoins": 1
           }
+        },
+        {
+          "type": "DeathControllerC",
+          "attributes":{}
         }
       ]
     },

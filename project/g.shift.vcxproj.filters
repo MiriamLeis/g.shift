@@ -33,6 +33,9 @@
     <ClCompile Include="..\src\SpikeEC.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\DeathControllerC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\ChangeGravityIC.h">
@@ -48,6 +51,9 @@
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="..\src\SpikeEC.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\DeathControllerC.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

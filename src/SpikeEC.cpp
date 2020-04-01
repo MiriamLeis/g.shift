@@ -3,15 +3,12 @@
 #include "Entity.h"
 #include "FactoriesFactory.h"
 #include "RigidbodyPC.h"
+#include "DeathControllerC.h"
 #include "Scene.h"
 
-#include <iostream> // PROVISIONAL
-
 void SpikeEC::checkEvent() {
-    if (reinterpret_cast<RigidbodyPC*>(father->getComponent("RigidbodyPC"))
-            ->collidesWith("Player")) {
-        // scene->deleteEntity(scene->getEntitybyId("Player"));
-        std::cout << "\n PLAYER DEAD \n"; // PROVISIONAL
+    if (reinterpret_cast<RigidbodyPC*>(father->getComponent("RigidbodyPC"))->collidesWith("Player")) {
+        reinterpret_cast<DeathControllerC*>(scene->getEntitybyId("GameManager")->getComponent("DeathControllerC"))->playerDeath();
     }
 }
 
