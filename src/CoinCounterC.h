@@ -7,13 +7,13 @@ DECLARE_FACTORY(CoinCounterC);
 
 class CoinCounterC : public Component {
   private:
-      // value of the collectable
-      int totalCoins_;
-      // value of the collectable
-      int coinsPicked_;
+    // value of the collectable
+    int totalCoins_;
+    // value of the collectable
+    int coinsPicked_;
 
   public:
-      CoinCounterC() = default;
+    CoinCounterC() = default;
     ~CoinCounterC() = default;
 
     virtual void destroy();

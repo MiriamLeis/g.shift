@@ -14,8 +14,7 @@ void DeathControllerC::destroy() {
     scene->getComponentsManager()->eraseDC(this);
 }
 
-void DeathControllerC::playerDeath()
-{
+void DeathControllerC::playerDeath() {
     scene->changeScene("DeadMenu");
     std::cout << "\n PLAYER DEAD \n"; // PROVISIONAL
 }
@@ -24,7 +23,7 @@ void DeathControllerC::playerDeath()
 DeathControllerCFactory::DeathControllerCFactory() = default;
 
 Component* DeathControllerCFactory::create(Entity* _father, Json::Value& _data,
-                                  Scene* _scene) {
+                                           Scene* _scene) {
     DeathControllerC* controller = new DeathControllerC();
     _scene->getComponentsManager()->addDC(controller);
 
@@ -37,4 +36,3 @@ Component* DeathControllerCFactory::create(Entity* _father, Json::Value& _data,
 };
 
 DEFINE_FACTORY(DeathControllerC);
-

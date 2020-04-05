@@ -1,9 +1,9 @@
 #include "CollectableEC.h"
+#include "CoinCounterC.h"
 #include "ComponentsManager.h"
 #include "Entity.h"
 #include "FactoriesFactory.h"
 #include "RigidbodyPC.h"
-#include "CoinCounterC.h"
 #include "Scene.h"
 
 #include <json.h>
@@ -16,26 +16,22 @@ void CollectableEC::destroy() {
 void CollectableEC::checkEvent() {
     if (reinterpret_cast<RigidbodyPC*>(father->getComponent("RigidbodyPC"))
             ->collidesWith("Player")) {
-        reinterpret_cast<CoinCounterC*>(scene->getEntitybyId("GameManager")->getComponent("CoinCounterC"))->pickCoin();
+        reinterpret_cast<CoinCounterC*>(
+            scene->getEntitybyId("GameManager")->getComponent("CoinCounterC"))
+            ->pickCoin();
         scene->deleteEntity(father);
     }
 }
 
-int CollectableEC::getValue()
-{
-    return value_;
-}
+int CollectableEC::getValue() { return value_; }
 
-void CollectableEC::setValue(int value)
-{
-    value_ = value;
-}
+void CollectableEC::setValue(int value) { value_ = value; }
 
 // FACTORY INFRASTRUCTURE
 CollectableECFactory::CollectableECFactory() = default;
 
 Component* CollectableECFactory::create(Entity* _father, Json::Value& _data,
-                                  Scene* _scene) {
+                                        Scene* _scene) {
     CollectableEC* collectable = new CollectableEC();
     _scene->getComponentsManager()->addEC(collectable);
 

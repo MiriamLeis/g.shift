@@ -1,7 +1,7 @@
 #pragma once
 
-#include "InputComponent.h"
 #include "Factory.h"
+#include "InputComponent.h"
 #include <string>
 
 #include "Factory.h"

@@ -1,14 +1,18 @@
 #include "SpikeEC.h"
 #include "ComponentsManager.h"
+#include "DeathControllerC.h"
 #include "Entity.h"
 #include "FactoriesFactory.h"
 #include "RigidbodyPC.h"
-#include "DeathControllerC.h"
 #include "Scene.h"
 
 void SpikeEC::checkEvent() {
-    if (reinterpret_cast<RigidbodyPC*>(father->getComponent("RigidbodyPC"))->collidesWith("Player")) {
-        reinterpret_cast<DeathControllerC*>(scene->getEntitybyId("GameManager")->getComponent("DeathControllerC"))->playerDeath();
+    if (reinterpret_cast<RigidbodyPC*>(father->getComponent("RigidbodyPC"))
+            ->collidesWith("Player")) {
+        reinterpret_cast<DeathControllerC*>(
+            scene->getEntitybyId("GameManager")
+                ->getComponent("DeathControllerC"))
+            ->playerDeath();
     }
 }
 

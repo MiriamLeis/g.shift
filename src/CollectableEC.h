@@ -7,11 +7,11 @@ DECLARE_FACTORY(CollectableEC);
 
 class CollectableEC : public EventComponent {
   private:
-      // value of the collectable
-      int value_;
+    // value of the collectable
+    int value_;
 
   public:
-      CollectableEC() = default;
+    CollectableEC() = default;
     ~CollectableEC() = default;
 
     virtual void destroy();

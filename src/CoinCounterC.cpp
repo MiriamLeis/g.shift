@@ -14,32 +14,23 @@ void CoinCounterC::destroy() {
     scene->getComponentsManager()->eraseDC(this);
 }
 
-int CoinCounterC::getTotalCoins()
-{
-    return totalCoins_;
-}
+int CoinCounterC::getTotalCoins() { return totalCoins_; }
 
-void CoinCounterC::setTotalCoins(int total)
-{
-    totalCoins_ = total;
-}
+void CoinCounterC::setTotalCoins(int total) { totalCoins_ = total; }
 
-void CoinCounterC::pickCoin()
-{
+void CoinCounterC::pickCoin() {
     coinsPicked_++;
-    std::cout << "\nCOIN PICKED      " << coinsPicked_ << " de " << totalCoins_ << "\n"; // PROVISIONAL
+    std::cout << "\nCOIN PICKED      " << coinsPicked_ << " de " << totalCoins_
+              << "\n"; // PROVISIONAL
 }
 
-int CoinCounterC::getCoinsPicked()
-{
-    return coinsPicked_;
-}
+int CoinCounterC::getCoinsPicked() { return coinsPicked_; }
 
 // FACTORY INFRASTRUCTURE
 CoinCounterCFactory::CoinCounterCFactory() = default;
 
 Component* CoinCounterCFactory::create(Entity* _father, Json::Value& _data,
-                                  Scene* _scene) {
+                                       Scene* _scene) {
     CoinCounterC* counter = new CoinCounterC();
     _scene->getComponentsManager()->addDC(counter);
 
