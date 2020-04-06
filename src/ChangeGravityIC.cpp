@@ -6,6 +6,8 @@
 #include "Scene.h"
 #include "TridimensionalObjectRC.h"
 
+#include "ConstantMovementC.h"
+
 #include "OgreRoot.h"
 
 #include <json.h>
