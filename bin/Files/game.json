@@ -47,6 +47,10 @@
         {
           "type": "DeathControllerC",
           "attributes": {}
+        },
+		{
+          "type": "DeathStopEC",
+          "attributes": {}
         }
       ]
     },
