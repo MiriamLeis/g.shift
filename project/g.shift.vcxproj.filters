@@ -36,6 +36,9 @@
     <ClCompile Include="..\src\DeathControllerC.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\OutOfBoundsEC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="..\src\DeathStop.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -57,6 +60,9 @@
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="..\src\DeathControllerC.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\OutOfBoundsEC.h">
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="..\src\DeathStop.h">

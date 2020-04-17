@@ -18,7 +18,7 @@
           "attributes": {
             "node": "nCamera",
             "viewportColour": [ 0.1, 0.1, 0.1 ],
-            "offset": [ 0, 0, 7000 ],
+            "offset": [ 0, 0, 1000 ],
             "lookAt": [ 0, 0, -1 ],
             "targetId": "Player",
             "follow": [ false, true, false ]
@@ -41,7 +41,7 @@
         {
           "type": "CoinCounterC",
           "attributes": {
-            "totalCoins": 36
+            "totalCoins": 32
           }
         },
         {
@@ -54,7 +54,7 @@
         }
       ]
     },
-    // Player Character CAMBIAR A 50 y 50
+    // Player Character
     {
       "id": "Player",
       "components": [
@@ -78,7 +78,7 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 50, 0, 0 ],
+            "position": [ 0, -1500, 0 ],
             "shape": [ 20, 20, 20 ],
             "mass": 1,
             "gravity": [ -50, 0, 0 ],
@@ -102,10 +102,277 @@
           "attributes": {
             "speed": 200
           }
+        },
+        {
+          "type": "OutOfBoundsEC",
+          "attributes": {
+            "LeftBorder": -650, // This value is the "real" border of the game
+            "RightBorder": 650 // This value is the "real" border of the game
+          }
         }
       ]
     },
     // Coins
+    // Tutorial of the Game (6)
+    {
+      "id": "TutorialCoin1",
+      "tag": "Coin",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 0.2, 0.2, 0.2 ]
+
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "sphere.mesh",
+            "node": "nCoin",
+            "material": "OrangeColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 0, -1100, 0 ],
+            "shape": [ 20, 20, 20 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": true,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "CollectableEC",
+          "attributes": {
+            "value": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "TutorialCoin2",
+      "tag": "Coin",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 0.2, 0.2, 0.2 ]
+
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "sphere.mesh",
+            "node": "nCoin",
+            "material": "OrangeColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 275, -700, 0 ],
+            "shape": [ 20, 20, 20 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": true,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "CollectableEC",
+          "attributes": {
+            "value": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "TutorialCoin3",
+      "tag": "Coin",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 0.2, 0.2, 0.2 ]
+
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "sphere.mesh",
+            "node": "nCoin",
+            "material": "OrangeColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -275, -280, 0 ],
+            "shape": [ 20, 20, 20 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": true,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "CollectableEC",
+          "attributes": {
+            "value": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "TutorialCoin4",
+      "tag": "Coin",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 0.2, 0.2, 0.2 ]
+
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "sphere.mesh",
+            "node": "nCoin",
+            "material": "OrangeColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 275, 200, 0 ],
+            "shape": [ 20, 20, 20 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": true,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "CollectableEC",
+          "attributes": {
+            "value": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "TutorialCoin5",
+      "tag": "Coin",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 0.2, 0.2, 0.2 ]
+
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "sphere.mesh",
+            "node": "nCoin",
+            "material": "OrangeColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -275, 600, 0 ],
+            "shape": [ 20, 20, 20 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": true,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "CollectableEC",
+          "attributes": {
+            "value": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "TutorialCoin6",
+      "tag": "Coin",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 0.2, 0.2, 0.2 ]
+
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "sphere.mesh",
+            "node": "nCoin",
+            "material": "OrangeColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 275, 1000, 0 ],
+            "shape": [ 20, 20, 20 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": true,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "CollectableEC",
+          "attributes": {
+            "value": 20
+          }
+        }
+      ]
+    },
+    // First Segment of the Game (8)
     {
       "id": "FirstSegmentCoin1",
       "tag": "Coin",
@@ -173,7 +440,7 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 0, 2200, 0 ],
+            "position": [ 300, 1800, 0 ],
             "shape": [ 20, 20, 20 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
@@ -216,7 +483,7 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 250, 2400, 0 ],
+            "position": [ 0, 2200, 0 ],
             "shape": [ 20, 20, 20 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
@@ -259,7 +526,7 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -250, 2400, 0 ],
+            "position": [ -225, 2700, 0 ],
             "shape": [ 20, 20, 20 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
@@ -302,7 +569,7 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 250, 2800, 0 ],
+            "position": [ -225, 3000, 0 ],
             "shape": [ 20, 20, 20 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
@@ -345,7 +612,7 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -250, 2800, 0 ],
+            "position": [ 0, 3250, 0 ],
             "shape": [ 20, 20, 20 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
@@ -388,7 +655,7 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 0, 3250, 0 ],
+            "position": [ 300, 4100, 0 ],
             "shape": [ 20, 20, 20 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
@@ -431,7 +698,7 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 250, 3600, 0 ],
+            "position": [ 300, 3800, 0 ],
             "shape": [ 20, 20, 20 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
@@ -450,8 +717,9 @@
         }
       ]
     },
+    // Second Segment of the Game (8)
     {
-      "id": "FirstSegmentCoin9",
+      "id": "SecondSegmentCoin1",
       "tag": "Coin",
       "components": [
         {
@@ -474,7 +742,7 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -250, 3600, 0 ],
+            "position": [ 0, 4300, 0 ],
             "shape": [ 20, 20, 20 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
@@ -494,7 +762,7 @@
       ]
     },
     {
-      "id": "FirstSegmentCoin10",
+      "id": "SecondSegmentCoin2",
       "tag": "Coin",
       "components": [
         {
@@ -517,7 +785,7 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 250, 4100, 0 ],
+            "position": [ -225, 4800, 0 ],
             "shape": [ 20, 20, 20 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
@@ -537,7 +805,7 @@
       ]
     },
     {
-      "id": "FirstSegmentCoin11",
+      "id": "SecondSegmentCoin3",
       "tag": "Coin",
       "components": [
         {
@@ -560,7 +828,7 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -250, 4100, 0 ],
+            "position": [ 0, 5200, 0 ],
             "shape": [ 20, 20, 20 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
@@ -580,93 +848,7 @@
       ]
     },
     {
-      "id": "FirstSegmentCoin12",
-      "tag": "Coin",
-      "components": [
-        {
-          "type": "TransformComponent",
-          "attributes": {
-            "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
-
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "sphere.mesh",
-            "node": "nCoin",
-            "material": "OrangeColourMaterial"
-          }
-        },
-        {
-          "type": "RigidbodyPC",
-          "attributes": {
-            "position": [ -200, 4800, 0 ],
-            "shape": [ 20, 20, 20 ],
-            "mass": 1,
-            "gravity": [ 0, 0, 0 ],
-            "trigger": true,
-            "kinematic": false,
-            "static": true,
-            "friction": 0,
-            "restitution": 0
-          }
-        },
-        {
-          "type": "CollectableEC",
-          "attributes": {
-            "value": 20
-          }
-        }
-      ]
-    },
-    {
-      "id": "FirstSegmentCoin13",
-      "tag": "Coin",
-      "components": [
-        {
-          "type": "TransformComponent",
-          "attributes": {
-            "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
-
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "sphere.mesh",
-            "node": "nCoin",
-            "material": "OrangeColourMaterial"
-          }
-        },
-        {
-          "type": "RigidbodyPC",
-          "attributes": {
-            "position": [ 450, 4800, 0 ],
-            "shape": [ 20, 20, 20 ],
-            "mass": 1,
-            "gravity": [ 0, 0, 0 ],
-            "trigger": true,
-            "kinematic": false,
-            "static": true,
-            "friction": 0,
-            "restitution": 0
-          }
-        },
-        {
-          "type": "CollectableEC",
-          "attributes": {
-            "value": 20
-          }
-        }
-      ]
-    },
-    {
-      "id": "FirstSegmentCoin14",
+      "id": "SecondSegmentCoin4",
       "tag": "Coin",
       "components": [
         {
@@ -709,7 +891,7 @@
       ]
     },
     {
-      "id": "FirstSegmentCoin15",
+      "id": "SecondSegmentCoin5",
       "tag": "Coin",
       "components": [
         {
@@ -732,7 +914,7 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -250, 5500, 0 ],
+            "position": [ 0, 6100, 0 ],
             "shape": [ 20, 20, 20 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
@@ -752,7 +934,7 @@
       ]
     },
     {
-      "id": "FirstSegmentCoin16",
+      "id": "SecondSegmentCoin6",
       "tag": "Coin",
       "components": [
         {
@@ -775,7 +957,7 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -250, 6050, 0 ],
+            "position": [ -250, 6600, 0 ],
             "shape": [ 20, 20, 20 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
@@ -795,7 +977,7 @@
       ]
     },
     {
-      "id": "FirstSegmentCoin17",
+      "id": "SecondSegmentCoin7",
       "tag": "Coin",
       "components": [
         {
@@ -818,136 +1000,7 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 0, 6200, 0 ],
-            "shape": [ 20, 20, 20 ],
-            "mass": 1,
-            "gravity": [ 0, 0, 0 ],
-            "trigger": true,
-            "kinematic": false,
-            "static": true,
-            "friction": 0,
-            "restitution": 0
-          }
-        },
-        {
-          "type": "CollectableEC",
-          "attributes": {
-            "value": 20
-          }
-        }
-      ]
-    },
-    {
-      "id": "FirstSegmentCoin18",
-      "tag": "Coin",
-      "components": [
-        {
-          "type": "TransformComponent",
-          "attributes": {
-            "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
-
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "sphere.mesh",
-            "node": "nCoin",
-            "material": "OrangeColourMaterial"
-          }
-        },
-        {
-          "type": "RigidbodyPC",
-          "attributes": {
-            "position": [ 250, 6500, 0 ],
-            "shape": [ 20, 20, 20 ],
-            "mass": 1,
-            "gravity": [ 0, 0, 0 ],
-            "trigger": true,
-            "kinematic": false,
-            "static": true,
-            "friction": 0,
-            "restitution": 0
-          }
-        },
-        {
-          "type": "CollectableEC",
-          "attributes": {
-            "value": 20
-          }
-        }
-      ]
-    },
-    {
-      "id": "FirstSegmentCoin19",
-      "tag": "Coin",
-      "components": [
-        {
-          "type": "TransformComponent",
-          "attributes": {
-            "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
-
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "sphere.mesh",
-            "node": "nCoin",
-            "material": "OrangeColourMaterial"
-          }
-        },
-        {
-          "type": "RigidbodyPC",
-          "attributes": {
-            "position": [ -225, 6900, 0 ],
-            "shape": [ 20, 20, 20 ],
-            "mass": 1,
-            "gravity": [ 0, 0, 0 ],
-            "trigger": true,
-            "kinematic": false,
-            "static": true,
-            "friction": 0,
-            "restitution": 0
-          }
-        },
-        {
-          "type": "CollectableEC",
-          "attributes": {
-            "value": 20
-          }
-        }
-      ]
-    },
-    {
-      "id": "FirstSegmentCoin20",
-      "tag": "Coin",
-      "components": [
-        {
-          "type": "TransformComponent",
-          "attributes": {
-            "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
-
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "sphere.mesh",
-            "node": "nCoin",
-            "material": "OrangeColourMaterial"
-          }
-        },
-        {
-          "type": "RigidbodyPC",
-          "attributes": {
-            "position": [ -250, 7300, 0 ],
+            "position": [ -50, 7100, 0 ],
             "shape": [ 20, 20, 20 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
@@ -1009,51 +1062,9 @@
         }
       ]
     },
+    // Third Segment of the Game (7)
     {
-      "id": "FirstSegmentCoin22",
-      "tag": "Coin",
-      "components": [
-        {
-          "type": "TransformComponent",
-          "attributes": {
-            "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
-
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "sphere.mesh",
-            "node": "nCoin",
-            "material": "OrangeColourMaterial"
-          }
-        },
-        {
-          "type": "RigidbodyPC",
-          "attributes": {
-            "position": [ -275, 8150, 0 ],
-            "shape": [ 20, 20, 20 ],
-            "mass": 1,
-            "gravity": [ 0, 0, 0 ],
-            "trigger": true,
-            "kinematic": false,
-            "static": true,
-            "friction": 0,
-            "restitution": 0
-          }
-        },
-        {
-          "type": "CollectableEC",
-          "attributes": {
-            "value": 20
-          }
-        }
-      ]
-    },
-    {
-      "id": "FirstSegmentCoin23",
+      "id": "ThirdSegmentCoin1",
       "tag": "Coin",
       "components": [
         {
@@ -1096,7 +1107,7 @@
       ]
     },
     {
-      "id": "FirstSegmentCoin24",
+      "id": "ThirdSegmentCoin2",
       "tag": "Coin",
       "components": [
         {
@@ -1139,7 +1150,7 @@
       ]
     },
     {
-      "id": "FirstSegmentCoin25",
+      "id": "ThirdSegmentCoin3",
       "tag": "Coin",
       "components": [
         {
@@ -1162,7 +1173,7 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -270, 9400, 0 ],
+            "position": [ 275, 9300, 0 ],
             "shape": [ 20, 20, 20 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
@@ -1182,7 +1193,7 @@
       ]
     },
     {
-      "id": "FirstSegmentCoin26",
+      "id": "ThirdSegmentCoin4",
       "tag": "Coin",
       "components": [
         {
@@ -1205,7 +1216,7 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 250, 9300, 0 ],
+            "position": [ 250, 9800, 0 ],
             "shape": [ 20, 20, 20 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
@@ -1225,7 +1236,7 @@
       ]
     },
     {
-      "id": "FirstSegmentCoin27",
+      "id": "ThirdSegmentCoin5",
       "tag": "Coin",
       "components": [
         {
@@ -1248,7 +1259,7 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -325, 10000, 0 ],
+            "position": [ 75, 10150, 0 ],
             "shape": [ 20, 20, 20 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
@@ -1268,7 +1279,7 @@
       ]
     },
     {
-      "id": "FirstSegmentCoin28",
+      "id": "ThirdSegmentCoin6",
       "tag": "Coin",
       "components": [
         {
@@ -1291,7 +1302,7 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 250, 9900, 0 ],
+            "position": [ -250, 10400, 0 ],
             "shape": [ 20, 20, 20 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
@@ -1311,7 +1322,7 @@
       ]
     },
     {
-      "id": "FirstSegmentCoin29",
+      "id": "ThirdSegmentCoin7",
       "tag": "Coin",
       "components": [
         {
@@ -1334,7 +1345,7 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -300, 10800, 0 ],
+            "position": [ -325, 10800, 0 ],
             "shape": [ 20, 20, 20 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
@@ -1353,51 +1364,9 @@
         }
       ]
     },
+    // Fourth Segment of the Game (3)
     {
-      "id": "FirstSegmentCoin30",
-      "tag": "Coin",
-      "components": [
-        {
-          "type": "TransformComponent",
-          "attributes": {
-            "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
-
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "sphere.mesh",
-            "node": "nCoin",
-            "material": "OrangeColourMaterial"
-          }
-        },
-        {
-          "type": "RigidbodyPC",
-          "attributes": {
-            "position": [ 250, 10600, 0 ],
-            "shape": [ 20, 20, 20 ],
-            "mass": 1,
-            "gravity": [ 0, 0, 0 ],
-            "trigger": true,
-            "kinematic": false,
-            "static": true,
-            "friction": 0,
-            "restitution": 0
-          }
-        },
-        {
-          "type": "CollectableEC",
-          "attributes": {
-            "value": 20
-          }
-        }
-      ]
-    },
-    {
-      "id": "FirstSegmentCoin31",
+      "id": "FourthSegmentCoin1",
       "tag": "Coin",
       "components": [
         {
@@ -1440,50 +1409,7 @@
       ]
     },
     {
-      "id": "FirstSegmentCoin32",
-      "tag": "Coin",
-      "components": [
-        {
-          "type": "TransformComponent",
-          "attributes": {
-            "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
-
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "sphere.mesh",
-            "node": "nCoin",
-            "material": "OrangeColourMaterial"
-          }
-        },
-        {
-          "type": "RigidbodyPC",
-          "attributes": {
-            "position": [ 275, 11100, 0 ],
-            "shape": [ 20, 20, 20 ],
-            "mass": 1,
-            "gravity": [ 0, 0, 0 ],
-            "trigger": true,
-            "kinematic": false,
-            "static": true,
-            "friction": 0,
-            "restitution": 0
-          }
-        },
-        {
-          "type": "CollectableEC",
-          "attributes": {
-            "value": 20
-          }
-        }
-      ]
-    },
-    {
-      "id": "FirstSegmentCoin33",
+      "id": "FourthSegmentCoin2",
       "tag": "Coin",
       "components": [
         {
@@ -1526,7 +1452,7 @@
       ]
     },
     {
-      "id": "FirstSegmentCoin34",
+      "id": "FourthSegmentCoin3",
       "tag": "Coin",
       "components": [
         {
@@ -1549,93 +1475,7 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 275, 11700, 0 ],
-            "shape": [ 20, 20, 20 ],
-            "mass": 1,
-            "gravity": [ 0, 0, 0 ],
-            "trigger": true,
-            "kinematic": false,
-            "static": true,
-            "friction": 0,
-            "restitution": 0
-          }
-        },
-        {
-          "type": "CollectableEC",
-          "attributes": {
-            "value": 20
-          }
-        }
-      ]
-    },
-    {
-      "id": "FirstSegmentCoin35",
-      "tag": "Coin",
-      "components": [
-        {
-          "type": "TransformComponent",
-          "attributes": {
-            "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
-
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "sphere.mesh",
-            "node": "nCoin",
-            "material": "OrangeColourMaterial"
-          }
-        },
-        {
-          "type": "RigidbodyPC",
-          "attributes": {
-            "position": [ 0, 12500, 0 ],
-            "shape": [ 20, 20, 20 ],
-            "mass": 1,
-            "gravity": [ 0, 0, 0 ],
-            "trigger": true,
-            "kinematic": false,
-            "static": true,
-            "friction": 0,
-            "restitution": 0
-          }
-        },
-        {
-          "type": "CollectableEC",
-          "attributes": {
-            "value": 20
-          }
-        }
-      ]
-    },
-    {
-      "id": "FirstSegmentCoin36",
-      "tag": "Coin",
-      "components": [
-        {
-          "type": "TransformComponent",
-          "attributes": {
-            "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
-
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "sphere.mesh",
-            "node": "nCoin",
-            "material": "OrangeColourMaterial"
-          }
-        },
-        {
-          "type": "RigidbodyPC",
-          "attributes": {
-            "position": [ 0, 12800, 0 ],
+            "position": [ 0, 12900, 0 ],
             "shape": [ 20, 20, 20 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
@@ -1656,6 +1496,77 @@
     },
 
     // WALLS OF THE TUBE
+    // Tutorial of the Game
+    {
+      "id": "LeftWallTutorial",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 2, 22, 1 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "cube.mesh",
+            "node": "nCube",
+            "material": "PinkColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -500, -800, 0 ],
+            "shape": [ 100, 1100, 50 ],
+            "mass": 0,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "RightWallTutorial",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ -10, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 2, 22, 1 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "cube.mesh",
+            "node": "nCube",
+            "material": "BlueColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 500, -800, 0 ],
+            "shape": [ 100, 1100, 50 ],
+            "mass": 0,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        }
+      ]
+    },
     // First Segment of the Game
     {
       "id": "LeftWallFirstSegment1",
@@ -1673,7 +1584,7 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "PurpleColourMaterial"
+            "material": "PinkColourMaterial"
           }
         },
         {
@@ -1743,7 +1654,7 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "PurpleColourMaterial"
+            "material": "PinkColourMaterial"
           }
         },
         {
@@ -1813,7 +1724,7 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "PurpleColourMaterial"
+            "material": "PinkColourMaterial"
           }
         },
         {
@@ -1884,7 +1795,7 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "PurpleColourMaterial"
+            "material": "PinkColourMaterial"
           }
         },
         {
@@ -1954,7 +1865,7 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "PurpleColourMaterial"
+            "material": "PinkColourMaterial"
           }
         },
         {
@@ -2024,7 +1935,7 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "PurpleColourMaterial"
+            "material": "PinkColourMaterial"
           }
         },
         {
@@ -2094,7 +2005,7 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "PurpleColourMaterial"
+            "material": "PinkColourMaterial"
           }
         },
         {
@@ -2165,7 +2076,7 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "PurpleColourMaterial"
+            "material": "PinkColourMaterial"
           }
         },
         {
@@ -2270,7 +2181,7 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "PurpleColourMaterial"
+            "material": "PinkColourMaterial"
           }
         },
         {
@@ -2410,7 +2321,7 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "PurpleColourMaterial"
+            "material": "PinkColourMaterial"
           }
         },
         {
@@ -2446,7 +2357,7 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "PurpleColourMaterial"
+            "material": "PinkColourMaterial"
           }
         },
         {
@@ -2516,7 +2427,7 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "PurpleColourMaterial"
+            "material": "PinkColourMaterial"
           }
         },
         {
@@ -2586,7 +2497,7 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "PurpleColourMaterial"
+            "material": "PinkColourMaterial"
           }
         },
         {
@@ -2695,7 +2606,7 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "PurpleColourMaterial"
+            "material": "BlueColourMaterial"
           }
         },
         {
@@ -2730,7 +2641,7 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "BlueColourMaterial"
+            "material": "PinkColourMaterial"
           }
         },
         {
@@ -2757,7 +2668,7 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 1, 6, 1 ]
+            "scale": [ 0.5, 6, 1 ]
           }
         },
         {
@@ -2765,14 +2676,14 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "BrownColourMaterial"
+            "material": "PinkColourMaterial"
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 0, 2800, 0 ],
-            "shape": [ 50, 300, 50 ],
+            "position": [ -25, 2800, 0 ],
+            "shape": [ 25, 300, 50 ],
             "mass": 0,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -2792,7 +2703,7 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 1.5, 0.5, 1 ]
+            "scale": [ 0.5, 6, 1 ]
           }
         },
         {
@@ -2800,14 +2711,14 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "PurpleColourMaterial"
+            "material": "BlueColourMaterial"
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -75, 3400, 0 ],
-            "shape": [ 75, 25, 50 ],
+            "position": [ 25, 2800, 0 ],
+            "shape": [ 25, 300, 50 ],
             "mass": 0,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -2835,13 +2746,13 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "BlueColourMaterial"
+            "material": "PinkColourMaterial"
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 75, 3400, 0 ],
+            "position": [ -200, 3400, 0 ],
             "shape": [ 75, 25, 50 ],
             "mass": 0,
             "gravity": [ 0, 0, 0 ],
@@ -2862,6 +2773,41 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
+            "scale": [ 1.5, 0.5, 1 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "cube.mesh",
+            "node": "nCube",
+            "material": "BlueColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 200, 3400, 0 ],
+            "shape": [ 75, 25, 50 ],
+            "mass": 0,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "FirstSegmentBlock7",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
             "scale": [ 1, 3, 1 ]
           }
         },
@@ -2870,7 +2816,7 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "PurpleColourMaterial"
+            "material": "PinkColourMaterial"
           }
         },
         {
@@ -2890,7 +2836,7 @@
       ]
     },
     {
-      "id": "FirstSegmentBlock7",
+      "id": "FirstSegmentBlock8",
       "components": [
         {
           "type": "TransformComponent",
@@ -2976,7 +2922,7 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "PurpleColourMaterial"
+            "material": "PinkColourMaterial"
           }
         },
         {
@@ -3046,7 +2992,7 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "PurpleColourMaterial"
+            "material": "PinkColourMaterial"
           }
         },
         {
@@ -3116,7 +3062,7 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "PurpleColourMaterial"
+            "material": "PinkColourMaterial"
           }
         },
         {
@@ -3186,7 +3132,7 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "PurpleColourMaterial"
+            "material": "PinkColourMaterial"
           }
         },
         {
@@ -3213,7 +3159,7 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 1.5, 0.5, 1 ]
+            "scale": [ 0.5, 0.5, 1 ]
           }
         },
         {
@@ -3221,14 +3167,14 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "PurpleColourMaterial"
+            "material": "PinkColourMaterial"
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -75, 7300, 0 ],
-            "shape": [ 75, 25, 50 ],
+            "position": [ -25, 7300, 0 ],
+            "shape": [ 25, 25, 50 ],
             "mass": 0,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -3248,7 +3194,7 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 1.5, 0.5, 1 ]
+            "scale": [ 0.5, 0.5, 1 ]
           }
         },
         {
@@ -3262,8 +3208,8 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 75, 7300, 0 ],
-            "shape": [ 75, 25, 50 ],
+            "position": [ 25, 7300, 0 ],
+            "shape": [ 25, 25, 50 ],
             "mass": 0,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -3291,7 +3237,7 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "BlueColourMaterial"
+            "material": "PinkColourMaterial"
           }
         },
         {
@@ -3326,7 +3272,7 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "PurpleColourMaterial"
+            "material": "BlueColourMaterial"
           }
         },
         {
@@ -3361,7 +3307,7 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "BlueColourMaterial"
+            "material": "PinkColourMaterial"
           }
         },
         {
@@ -3466,7 +3412,7 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "PurpleColourMaterial"
+            "material": "PinkColourMaterial"
           }
         },
         {
@@ -3502,7 +3448,7 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "BlueColourMaterial"
+            "material": "PinkColourMaterial"
           }
         },
         {
@@ -3529,7 +3475,7 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 1, 1, 1 ]
+            "scale": [ 0.5, 1, 1 ]
           }
         },
         {
@@ -3537,14 +3483,14 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "PurpleColourMaterial"
+            "material": "BlueColourMaterial"
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ 150, 8300, 0 ],
-            "shape": [ 50, 50, 50 ],
+            "shape": [ 25, 50, 50 ],
             "mass": 0,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -3564,7 +3510,7 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 1, 1, 1 ]
+            "scale": [ 0.5, 1, 1 ]
           }
         },
         {
@@ -3572,14 +3518,14 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "PurpleColourMaterial"
+            "material": "BlueColourMaterial"
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ 150, 8000, 0 ],
-            "shape": [ 50, 50, 50 ],
+            "shape": [ 25, 50, 50 ],
             "mass": 0,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -3607,7 +3553,7 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "PurpleColourMaterial"
+            "material": "PinkColourMaterial"
           }
         },
         {
@@ -3677,7 +3623,7 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "BlueColourMaterial"
+            "material": "PinkColourMaterial"
           }
         },
         {
@@ -3712,7 +3658,7 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "PurpleColourMaterial"
+            "material": "BlueColourMaterial"
           }
         },
         {
@@ -3747,7 +3693,7 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "PurpleColourMaterial"
+            "material": "BlueColourMaterial"
           }
         },
         {
@@ -3817,7 +3763,7 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "PurpleColourMaterial"
+            "material": "PinkColourMaterial"
           }
         },
         {
@@ -3852,7 +3798,7 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "BlueColourMaterial"
+            "material": "PinkColourMaterial"
           }
         },
         {
@@ -3887,7 +3833,7 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "PurpleColourMaterial"
+            "material": "PinkColourMaterial"
           }
         },
         {
@@ -3957,7 +3903,7 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "PurpleColourMaterial"
+            "material": "PinkColourMaterial"
           }
         },
         {
@@ -4019,7 +3965,7 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 2.5, 0.5, 1 ]
+            "scale": [ 1.25, 0.5, 1 ]
           }
         },
         {
@@ -4027,14 +3973,14 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "PurpleColourMaterial"
+            "material": "PinkColourMaterial"
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 0, 9750, 0 ],
-            "shape": [ 125, 25, 50 ],
+            "position": [ -62.5, 9750, 0 ],
+            "shape": [ 62.5, 25, 50 ],
             "mass": 0,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -4054,7 +4000,7 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 2, 2, 1 ]
+            "scale": [ 1.25, 0.5, 1 ]
           }
         },
         {
@@ -4068,8 +4014,8 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -100, 10050, 0 ],
-            "shape": [ 100, 100, 50 ],
+            "position": [ 62.5, 9750, 0 ],
+            "shape": [ 62.5, 25, 50 ],
             "mass": 0,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -4089,6 +4035,41 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
+            "scale": [ 2, 2, 1 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "cube.mesh",
+            "node": "nCube",
+            "material": "PinkColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -100, 10050, 0 ],
+            "shape": [ 100, 100, 50 ],
+            "mass": 0,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "ThirdSegmentBlock19",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
             "scale": [ 2, 0.5, 1 ]
           }
         },
@@ -4097,7 +4078,7 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "PurpleColourMaterial"
+            "material": "BlueColourMaterial"
           }
         },
         {
@@ -4117,7 +4098,7 @@
       ]
     },
     {
-      "id": "ThirdSegmentBlock19",
+      "id": "ThirdSegmentBlock20",
       "components": [
         {
           "type": "TransformComponent",
@@ -4152,7 +4133,7 @@
       ]
     },
     {
-      "id": "ThirdSegmentBlock20",
+      "id": "ThirdSegmentBlock21",
       "components": [
         {
           "type": "TransformComponent",
@@ -4167,7 +4148,7 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "PurpleColourMaterial"
+            "material": "PinkColourMaterial"
           }
         },
         {
@@ -4187,7 +4168,7 @@
       ]
     },
     {
-      "id": "ThirdSegmentBlock21",
+      "id": "ThirdSegmentBlock22",
       "components": [
         {
           "type": "TransformComponent",
@@ -4202,7 +4183,7 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "BlueColourMaterial"
+            "material": "PinkColourMaterial"
           }
         },
         {
@@ -4273,7 +4254,7 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "PurpleColourMaterial"
+            "material": "PinkColourMaterial"
           }
         },
         {
@@ -4343,7 +4324,7 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "PurpleColourMaterial"
+            "material": "PinkColourMaterial"
           }
         },
         {
@@ -4413,7 +4394,7 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "PurpleColourMaterial"
+            "material": "PinkColourMaterial"
           }
         },
         {
@@ -4448,7 +4429,7 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "PurpleColourMaterial"
+            "material": "BlueColourMaterial"
           }
         },
         {
@@ -4483,7 +4464,7 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "BlueColourMaterial"
+            "material": "PinkColourMaterial"
           }
         },
         {
@@ -4553,7 +4534,7 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "PurpleColourMaterial"
+            "material": "PinkColourMaterial"
           }
         },
         {
@@ -4588,7 +4569,7 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "PurpleColourMaterial"
+            "material": "BlueColourMaterial"
           }
         },
         {
@@ -4623,7 +4604,7 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "BlueColourMaterial"
+            "material": "PinkColourMaterial"
           }
         },
         {
@@ -4650,7 +4631,7 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 2, 0.5, 1 ]
+            "scale": [ 1, 0.5, 1 ]
           }
         },
         {
@@ -4658,14 +4639,14 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "BrownColourMaterial"
+            "material": "PinkColourMaterial"
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 0, 12650, 0 ],
-            "shape": [ 100, 25, 50 ],
+            "position": [ -50, 12650, 0 ],
+            "shape": [ 50, 25, 50 ],
             "mass": 0,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -4685,7 +4666,7 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 2, 0.5, 1 ]
+            "scale": [ 1, 0.5, 1 ]
           }
         },
         {
@@ -4693,14 +4674,14 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "PurpleColourMaterial"
+            "material": "BlueColourMaterial"
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 300, 12800, 0 ],
-            "shape": [ 100, 25, 50 ],
+            "position": [ 50, 12650, 0 ],
+            "shape": [ 50, 25, 50 ],
             "mass": 0,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -4734,7 +4715,7 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -300, 12800, 0 ],
+            "position": [ 300, 12900, 0 ],
             "shape": [ 100, 25, 50 ],
             "mass": 0,
             "gravity": [ 0, 0, 0 ],
@@ -4763,14 +4744,84 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "BrownColourMaterial"
+            "material": "PinkColourMaterial"
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 0, 13100, 0 ],
+            "position": [ -300, 12900, 0 ],
             "shape": [ 100, 25, 50 ],
+            "mass": 0,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "FourthSegmentBlock17",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 1, 0.5, 1 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "cube.mesh",
+            "node": "nCube",
+            "material": "PinkColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -50, 13100, 0 ],
+            "shape": [ 50, 25, 50 ],
+            "mass": 0,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "FourthSegmentBlock18",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 1, 0.5, 1 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "cube.mesh",
+            "node": "nCube",
+            "material": "BlueColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 50, 13100, 0 ],
+            "shape": [ 50, 25, 50 ],
             "mass": 0,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -4784,8 +4835,169 @@
     },
 
     // SPIKES
+    // Tutorial of the Game
+    {
+      "id": "TutorialSpike1",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 0.5, 2, 1 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "cube.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 375, -1000, 0 ],
+            "shape": [ 25, 100, 50 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "id": "TutorialSpike2",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 0.5, 2, 1 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "cube.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -375, -650, 0 ],
+            "shape": [ 25, 100, 50 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "id": "TutorialSpike3",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 0.5, 2, 1 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "cube.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 375, -200, 0 ],
+            "shape": [ 25, 100, 50 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "id": "TutorialSpike4",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 0.5, 2, 1 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "cube.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -375, 100, 0 ],
+            "shape": [ 25, 100, 50 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    },
     // First Segment of the Game
-	{
+    {
       "id": "FirstSegmentSpike1",
       "tag": "Spike",
       "components": [
@@ -4864,7 +5076,7 @@
           "attributes": {}
         }
       ]
-    },  
+    },
     {
       "id": "FirstSegmentSpike3",
       "tag": "Spike",
@@ -6266,6 +6478,126 @@
         }
       ]
     },
+    {
+      "id": "SecondSegmentSpike25",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 1, 0.5, 1 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "cube.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 130, 6100, 0 ],
+            "shape": [ 50, 25, 50 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "id": "SecondSegmentSpike26",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 1, 0.5, 1 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "cube.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -130, 6100, 0 ],
+            "shape": [ 50, 25, 50 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "id": "SecondSegmentSpike27",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 1, 0.25, 1 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "cube.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 0, 7275, 0 ],
+            "shape": [ 50, 12.5, 50 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    },
     // Third Segment of the Game
     {
       "id": "ThirdSegmentSpike1",
@@ -7012,6 +7344,86 @@
           "attributes": {
             "position": [ -225, 10700, 0 ],
             "shape": [ 25, 50, 50 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "id": "ThirdSegmentSpike20",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 2, 0.5, 1 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "cube.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 300, 8750, 0 ],
+            "shape": [ 100, 25, 50 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "id": "ThirdSegmentSpike21",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 2, 0.25, 1 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "cube.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 250, 10112.5, 0 ],
+            "shape": [ 100, 12.5, 50 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,

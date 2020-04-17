@@ -1,18 +1,15 @@
 #include "ChangeGravityIC.h"
 #include "ComponentsManager.h"
+#include "ConstantMovementC.h"
 #include "Entity.h"
 #include "FactoriesFactory.h"
+#include "OgreRoot.h"
 #include "RigidbodyPC.h"
 #include "Scene.h"
 #include "TridimensionalObjectRC.h"
 
-#include "ConstantMovementC.h"
-
-#include "OgreRoot.h"
-
-#include <json.h>
-
 #include <iostream>
+#include <json.h>
 
 ChangeGravityIC::ChangeGravityIC() {}
 
