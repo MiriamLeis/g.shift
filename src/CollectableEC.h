@@ -5,10 +5,13 @@
 
 DECLARE_FACTORY(CollectableEC);
 
+class AnimationLC;
 class CollectableEC : public EventComponent {
   private:
     // value of the collectable
     int value_;
+
+    AnimationLC* animations = nullptr;
 
   public:
     CollectableEC() = default;
@@ -22,4 +25,10 @@ class CollectableEC : public EventComponent {
     int getValue();
     // set the value of the collectable
     void setValue(int value);
+
+    // set animations from father AnimationLC
+    void setAnimations();
+
+    // play idle animation
+    void playAnimation();
 };

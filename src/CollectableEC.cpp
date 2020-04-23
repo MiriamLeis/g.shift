@@ -1,4 +1,5 @@
 #include "CollectableEC.h"
+#include "AnimationLC.h"
 #include "CoinCounterC.h"
 #include "ComponentsManager.h"
 #include "Entity.h"
@@ -27,6 +28,13 @@ int CollectableEC::getValue() { return value_; }
 
 void CollectableEC::setValue(int value) { value_ = value; }
 
+void CollectableEC::setAnimations() {
+    animations =
+        reinterpret_cast<AnimationLC*>(father->getComponent("AnimationLC"));
+}
+
+void CollectableEC::playAnimation() { animations->startAnimation("idle"); }
+
 // FACTORY INFRASTRUCTURE
 CollectableECFactory::CollectableECFactory() = default;
 
@@ -43,6 +51,9 @@ Component* CollectableECFactory::create(Entity* _father, Json::Value& _data,
     collectable->setValue(_data["value"].asInt());
 
     collectable->setActive(true);
+
+    collectable->setAnimations();
+    collectable->playAnimation();
 
     return collectable;
 };

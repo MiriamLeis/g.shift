@@ -109,3 +109,34 @@ material EnemyBulletMaterial
         }
     }
 }
+
+material CoinMaterial
+{
+    receive_shadows on
+    technique {
+        pass {
+            lighting on
+            ambient 1.0 0.9089239835739136 0.15962879359722137 1.0
+            diffuse 0.800000011920929 0.7271391976943491 0.1277030367807006 1.0
+            specular 1.0 0.9089239835739136 0.15962879359722137 1.0 32.0
+            emissive 0.0 0.0 0.0 1.0
+            
+            alpha_to_coverage off 
+            colour_write on 
+            cull_hardware clockwise 
+            depth_check on 
+            depth_func less_equal 
+            depth_write on 
+            illumination_stage  
+            light_clip_planes off 
+            light_scissor off 
+            normalise_normals off 
+            polygon_mode solid 
+            scene_blend one zero 
+            scene_blend_op add 
+            shading gouraud 
+            transparent_sorting on 
+
+        }
+    }
+}

@@ -48,7 +48,7 @@
           "type": "DeathControllerC",
           "attributes": {}
         },
-		{
+        {
           "type": "DeathStopEC",
           "attributes": {}
         }
@@ -123,16 +123,27 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 25, 25, 25 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
+          }
+        },
+        {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
           }
         },
         {
@@ -166,16 +177,27 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 25, 25, 25 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
+          }
+        },
+        {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
           }
         },
         {
@@ -209,16 +231,27 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 25, 25, 25 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
+          }
+        },
+        {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
           }
         },
         {
@@ -252,16 +285,27 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 25, 25, 25 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
+          }
+        },
+        {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
           }
         },
         {
@@ -295,16 +339,27 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 25, 25, 25 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
+          }
+        },
+        {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
           }
         },
         {
@@ -338,16 +393,27 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 25, 25, 25 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
+          }
+        },
+        {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
           }
         },
         {
@@ -382,16 +448,27 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 25, 25, 25 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
+          }
+        },
+        {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
           }
         },
         {
@@ -425,16 +502,27 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 25, 25, 25 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
+          }
+        },
+        {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
           }
         },
         {
@@ -468,16 +556,27 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 25, 25, 25 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
+          }
+        },
+        {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
           }
         },
         {
@@ -511,16 +610,27 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 25, 25, 25 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
+          }
+        },
+        {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
           }
         },
         {
@@ -554,16 +664,27 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 25, 25, 25 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
+          }
+        },
+        {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
           }
         },
         {
@@ -597,16 +718,27 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 25, 25, 25 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
+          }
+        },
+        {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
           }
         },
         {
@@ -640,16 +772,27 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 25, 25, 25 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
+          }
+        },
+        {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
           }
         },
         {
@@ -683,16 +826,27 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 25, 25, 25 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
+          }
+        },
+        {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
           }
         },
         {
@@ -727,16 +881,27 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 25, 25, 25 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
+          }
+        },
+        {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
           }
         },
         {
@@ -770,16 +935,27 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 25, 25, 25 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
+          }
+        },
+        {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
           }
         },
         {
@@ -813,16 +989,27 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 25, 25, 25 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
+          }
+        },
+        {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
           }
         },
         {
@@ -856,16 +1043,27 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 25, 25, 25 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
+          }
+        },
+        {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
           }
         },
         {
@@ -899,16 +1097,27 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 25, 25, 25 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
+          }
+        },
+        {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
           }
         },
         {
@@ -942,16 +1151,27 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 25, 25, 25 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
+          }
+        },
+        {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
           }
         },
         {
@@ -985,16 +1205,27 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 25, 25, 25 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
+          }
+        },
+        {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
           }
         },
         {
@@ -1028,16 +1259,27 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 25, 25, 25 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
+          }
+        },
+        {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
           }
         },
         {
@@ -1072,16 +1314,27 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 25, 25, 25 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
+          }
+        },
+        {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
           }
         },
         {
@@ -1115,16 +1368,27 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 25, 25, 25 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
+          }
+        },
+        {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
           }
         },
         {
@@ -1158,16 +1422,27 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 25, 25, 25 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
+          }
+        },
+        {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
           }
         },
         {
@@ -1201,16 +1476,27 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 25, 25, 25 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
+          }
+        },
+        {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
           }
         },
         {
@@ -1244,16 +1530,27 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 25, 25, 25 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
+          }
+        },
+        {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
           }
         },
         {
@@ -1287,16 +1584,27 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 25, 25, 25 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
+          }
+        },
+        {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
           }
         },
         {
@@ -1330,16 +1638,27 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 25, 25, 25 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
+          }
+        },
+        {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
           }
         },
         {
@@ -1374,23 +1693,34 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 25, 25, 25 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
+          }
+        },
+        {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
           }
         },
         {
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ -275, 11100, 0 ],
-            "shape": [ 20, 20, 20 ],
+            "shape": [ 50, 50, 50 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": true,
@@ -1417,16 +1747,27 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 25, 25, 25 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
+          }
+        },
+        {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
           }
         },
         {
@@ -1460,16 +1801,27 @@
           "attributes": {
             "position": [ 0, 0, 0 ],
             "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.2, 0.2, 0.2 ]
+            "scale": [ 25, 25, 25 ]
 
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "sphere.mesh",
+            "mesh": "gshift_coin.mesh",
             "node": "nCoin",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
+          }
+        },
+        {
+          "type": "AnimationLC",
+          "attributes": {
+            "animations": [
+              {
+                "name": "idle",
+                "loop": true
+              }
+            ]
           }
         },
         {
@@ -2567,7 +2919,7 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nCube",
-            "material": "OrangeColourMaterial"
+            "material": "CoinMaterial"
           }
         },
         {
