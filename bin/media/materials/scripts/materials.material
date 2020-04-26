@@ -107,7 +107,7 @@ material SpikeMaterial
 		
         pass 
         {
-			texture SpikeColor.jpg
+			texture SpikeColor.png
         }
     }
 }
