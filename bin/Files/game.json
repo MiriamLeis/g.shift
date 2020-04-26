@@ -78,7 +78,7 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 0, 5000, 5000 ], //-1500
+            "position": [ 0, 10100, 5000 ], //-1500
             "shape": [ 20, 20, 20 ],
             "mass": 1,
             "gravity": [ -50, 0, 0 ],
@@ -107,7 +107,7 @@
           "type": "OutOfBoundsEC",
           "attributes": {
             "LeftBorder": -650, // This value is the "real" border of the game
-            "RightBorder": 650000 // This value is the "real" border of the game
+            "RightBorder": 999999 // This value is the "real" border of the game
           }
         }
       ]
@@ -12355,21 +12355,21 @@
 
     // Third Segment of the Game (21)
     {
-      "id": "ThirdSegmentSpike1",
+      "id": "ThirdSegmentSpikeSet1-1",
       "tag": "Spike",
       "components": [
         {
           "type": "TransformComponent",
           "attributes": {
             "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 4, 1 ]
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "cube.mesh",
+            "mesh": "Spike.mesh",
             "node": "nSpike",
             "material": "RedColourMaterial"
           }
@@ -12377,8 +12377,48 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -175, 8150, 0 ],
-            "shape": [ 25, 200, 50 ],
+            "position": [ -150, 7975, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    }, // Set 1
+    {
+      "id": "ThirdSegmentSpikeSet1-2",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -150, 8025, 0 ],
+            "shape": [ 50, 25, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -12395,21 +12435,21 @@
       ]
     },
     {
-      "id": "ThirdSegmentSpike2",
+      "id": "ThirdSegmentSpikeSet1-3",
       "tag": "Spike",
       "components": [
         {
           "type": "TransformComponent",
           "attributes": {
             "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 4, 1 ]
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "cube.mesh",
+            "mesh": "Spike.mesh",
             "node": "nSpike",
             "material": "RedColourMaterial"
           }
@@ -12417,8 +12457,8 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -375, 8150, 0 ],
-            "shape": [ 25, 200, 50 ],
+            "position": [ -150, 8075, 0 ],
+            "shape": [ 50, 25, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -12435,21 +12475,21 @@
       ]
     },
     {
-      "id": "ThirdSegmentSpike3",
+      "id": "ThirdSegmentSpikeSet1-4",
       "tag": "Spike",
       "components": [
         {
           "type": "TransformComponent",
           "attributes": {
             "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 0.5, 1 ]
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "cube.mesh",
+            "mesh": "Spike.mesh",
             "node": "nSpike",
             "material": "RedColourMaterial"
           }
@@ -12457,8 +12497,8 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 375, 7875, 0 ],
-            "shape": [ 25, 25, 50 ],
+            "position": [ -150, 8125, 0 ],
+            "shape": [ 50, 25, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -12475,21 +12515,21 @@
       ]
     },
     {
-      "id": "ThirdSegmentSpike4",
+      "id": "ThirdSegmentSpikeSet1-5",
       "tag": "Spike",
       "components": [
         {
           "type": "TransformComponent",
           "attributes": {
             "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 0.5, 1 ]
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "cube.mesh",
+            "mesh": "Spike.mesh",
             "node": "nSpike",
             "material": "RedColourMaterial"
           }
@@ -12497,8 +12537,8 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 375, 8275, 0 ],
-            "shape": [ 25, 25, 50 ],
+            "position": [ -150, 8175, 0 ],
+            "shape": [ 50, 25, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -12515,21 +12555,21 @@
       ]
     },
     {
-      "id": "ThirdSegmentSpike5",
+      "id": "ThirdSegmentSpikeSet1-6",
       "tag": "Spike",
       "components": [
         {
           "type": "TransformComponent",
           "attributes": {
             "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 1, 1 ]
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "cube.mesh",
+            "mesh": "Spike.mesh",
             "node": "nSpike",
             "material": "RedColourMaterial"
           }
@@ -12537,8 +12577,8 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 200, 8300, 0 ],
-            "shape": [ 25, 50, 50 ],
+            "position": [ -150, 8225, 0 ],
+            "shape": [ 50, 25, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -12555,21 +12595,21 @@
       ]
     },
     {
-      "id": "ThirdSegmentSpike6",
+      "id": "ThirdSegmentSpikeSet1-7",
       "tag": "Spike",
       "components": [
         {
           "type": "TransformComponent",
           "attributes": {
             "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 1, 1 ]
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "cube.mesh",
+            "mesh": "Spike.mesh",
             "node": "nSpike",
             "material": "RedColourMaterial"
           }
@@ -12577,8 +12617,8 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 200, 8000, 0 ],
-            "shape": [ 25, 50, 50 ],
+            "position": [ -150, 8275, 0 ],
+            "shape": [ 50, 25, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -12595,21 +12635,21 @@
       ]
     },
     {
-      "id": "ThirdSegmentSpike7",
+      "id": "ThirdSegmentSpikeSet1-8",
       "tag": "Spike",
       "components": [
         {
           "type": "TransformComponent",
           "attributes": {
             "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 2, 1 ]
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "cube.mesh",
+            "mesh": "Spike.mesh",
             "node": "nSpike",
             "material": "RedColourMaterial"
           }
@@ -12617,8 +12657,8 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 375, 9200, 0 ],
-            "shape": [ 25, 100, 50 ],
+            "position": [ -150, 8325, 0 ],
+            "shape": [ 50, 25, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -12635,21 +12675,21 @@
       ]
     },
     {
-      "id": "ThirdSegmentSpike8",
+      "id": "ThirdSegmentSpikeSet2-1",
       "tag": "Spike",
       "components": [
         {
           "type": "TransformComponent",
           "attributes": {
             "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 0.5, 1 ]
+            "orientation": [ 0, 0, -90 ],
+            "scale": [ 80, 80, 80 ]
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "cube.mesh",
+            "mesh": "Spike.mesh",
             "node": "nSpike",
             "material": "RedColourMaterial"
           }
@@ -12657,8 +12697,48 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 175, 9250, 0 ],
-            "shape": [ 25, 25, 50 ],
+            "position": [ -400, 7975, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    }, // Set 2
+    {
+      "id": "ThirdSegmentSpikeSet2-2",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, -90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -400, 8025, 0 ],
+            "shape": [ 50, 25, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -12675,21 +12755,21 @@
       ]
     },
     {
-      "id": "ThirdSegmentSpike9",
+      "id": "ThirdSegmentSpikeSet2-3",
       "tag": "Spike",
       "components": [
         {
           "type": "TransformComponent",
           "attributes": {
             "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 0.5, 1 ]
+            "orientation": [ 0, 0, -90 ],
+            "scale": [ 80, 80, 80 ]
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "cube.mesh",
+            "mesh": "Spike.mesh",
             "node": "nSpike",
             "material": "RedColourMaterial"
           }
@@ -12697,8 +12777,8 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -175, 9250, 0 ],
-            "shape": [ 25, 25, 50 ],
+            "position": [ -400, 8075, 0 ],
+            "shape": [ 50, 25, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -12715,21 +12795,21 @@
       ]
     },
     {
-      "id": "ThirdSegmentSpike10",
+      "id": "ThirdSegmentSpikeSet2-4",
       "tag": "Spike",
       "components": [
         {
           "type": "TransformComponent",
           "attributes": {
             "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 1, 1 ]
+            "orientation": [ 0, 0, -90 ],
+            "scale": [ 80, 80, 80 ]
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "cube.mesh",
+            "mesh": "Spike.mesh",
             "node": "nSpike",
             "material": "RedColourMaterial"
           }
@@ -12737,8 +12817,8 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -375, 9000, 0 ],
-            "shape": [ 25, 50, 50 ],
+            "position": [ -400, 8125, 0 ],
+            "shape": [ 50, 25, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -12755,21 +12835,21 @@
       ]
     },
     {
-      "id": "ThirdSegmentSpike11",
+      "id": "ThirdSegmentSpikeSet2-5",
       "tag": "Spike",
       "components": [
         {
           "type": "TransformComponent",
           "attributes": {
             "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 3, 1 ]
+            "orientation": [ 0, 0, -90 ],
+            "scale": [ 80, 80, 80 ]
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "cube.mesh",
+            "mesh": "Spike.mesh",
             "node": "nSpike",
             "material": "RedColourMaterial"
           }
@@ -12777,8 +12857,8 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -375, 9500, 0 ],
-            "shape": [ 25, 150, 50 ],
+            "position": [ -400, 8175, 0 ],
+            "shape": [ 50, 25, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -12795,21 +12875,21 @@
       ]
     },
     {
-      "id": "ThirdSegmentSpike12",
+      "id": "ThirdSegmentSpikeSet2-6",
       "tag": "Spike",
       "components": [
         {
           "type": "TransformComponent",
           "attributes": {
             "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 1, 1 ]
+            "orientation": [ 0, 0, -90 ],
+            "scale": [ 80, 80, 80 ]
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "cube.mesh",
+            "mesh": "Spike.mesh",
             "node": "nSpike",
             "material": "RedColourMaterial"
           }
@@ -12817,8 +12897,8 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 175, 9500, 0 ],
-            "shape": [ 25, 50, 50 ],
+            "position": [ -400, 8225, 0 ],
+            "shape": [ 50, 25, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -12835,21 +12915,21 @@
       ]
     },
     {
-      "id": "ThirdSegmentSpike13",
+      "id": "ThirdSegmentSpikeSet2-7",
       "tag": "Spike",
       "components": [
         {
           "type": "TransformComponent",
           "attributes": {
             "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 1, 1 ]
+            "orientation": [ 0, 0, -90 ],
+            "scale": [ 80, 80, 80 ]
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "cube.mesh",
+            "mesh": "Spike.mesh",
             "node": "nSpike",
             "material": "RedColourMaterial"
           }
@@ -12857,8 +12937,8 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -175, 9500, 0 ],
-            "shape": [ 25, 50, 50 ],
+            "position": [ -400, 8275, 0 ],
+            "shape": [ 50, 25, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -12875,21 +12955,21 @@
       ]
     },
     {
-      "id": "ThirdSegmentSpike14",
+      "id": "ThirdSegmentSpikeSet2-8",
       "tag": "Spike",
       "components": [
         {
           "type": "TransformComponent",
           "attributes": {
             "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 3, 1 ]
+            "orientation": [ 0, 0, -90 ],
+            "scale": [ 80, 80, 80 ]
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "cube.mesh",
+            "mesh": "Spike.mesh",
             "node": "nSpike",
             "material": "RedColourMaterial"
           }
@@ -12897,8 +12977,8 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 375, 9700, 0 ],
-            "shape": [ 25, 150, 50 ],
+            "position": [ -400, 8325, 0 ],
+            "shape": [ 50, 25, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -12915,21 +12995,21 @@
       ]
     },
     {
-      "id": "ThirdSegmentSpike15",
+      "id": "ThirdSegmentSpikeSet3-1",
       "tag": "Spike",
       "components": [
         {
           "type": "TransformComponent",
           "attributes": {
             "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 2, 1 ]
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "cube.mesh",
+            "mesh": "Spike.mesh",
             "node": "nSpike",
             "material": "RedColourMaterial"
           }
@@ -12937,8 +13017,128 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -225, 10050, 0 ],
-            "shape": [ 25, 100, 50 ],
+            "position": [ 400, 7875, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    }, // Set 3
+    {
+      "id": "ThirdSegmentSpikeSet4-1",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 400, 8275, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    }, // Set 4
+    {
+      "id": "ThirdSegmentSpikeSet5-1",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, -90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 175, 8275, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    }, // Set 5
+    {
+      "id": "ThirdSegmentSpikeSet5-2",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, -90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 175, 8325, 0 ],
+            "shape": [ 50, 25, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -12955,21 +13155,21 @@
       ]
     },
     {
-      "id": "ThirdSegmentSpike16",
+      "id": "ThirdSegmentSpikeSet6-1",
       "tag": "Spike",
       "components": [
         {
           "type": "TransformComponent",
           "attributes": {
             "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 2, 1 ]
+            "orientation": [ 0, 0, -90 ],
+            "scale": [ 80, 80, 80 ]
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "cube.mesh",
+            "mesh": "Spike.mesh",
             "node": "nSpike",
             "material": "RedColourMaterial"
           }
@@ -12977,8 +13177,48 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 0, 10050, 0 ],
-            "shape": [ 25, 100, 50 ],
+            "position": [ 175, 7975, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    }, // Set 6
+    {
+      "id": "ThirdSegmentSpikeSet6-2",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, -90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 175, 8025, 0 ],
+            "shape": [ 50, 25, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -12995,21 +13235,21 @@
       ]
     },
     {
-      "id": "ThirdSegmentSpike17",
+      "id": "ThirdSegmentSpikeSet7-1",
       "tag": "Spike",
       "components": [
         {
           "type": "TransformComponent",
           "attributes": {
             "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 2, 1 ]
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "cube.mesh",
+            "mesh": "Spike.mesh",
             "node": "nSpike",
             "material": "RedColourMaterial"
           }
@@ -13017,8 +13257,48 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 375, 10600, 0 ],
-            "shape": [ 25, 100, 50 ],
+            "position": [ 400, 9075, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    }, // Set 7
+    {
+      "id": "ThirdSegmentSpikeSet7-2",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 400, 9125, 0 ],
+            "shape": [ 50, 25, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -13035,21 +13315,21 @@
       ]
     },
     {
-      "id": "ThirdSegmentSpike18",
+      "id": "ThirdSegmentSpikeSet7-3",
       "tag": "Spike",
       "components": [
         {
           "type": "TransformComponent",
           "attributes": {
             "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 2, 1 ]
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "cube.mesh",
+            "mesh": "Spike.mesh",
             "node": "nSpike",
             "material": "RedColourMaterial"
           }
@@ -13057,8 +13337,8 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 125, 10600, 0 ],
-            "shape": [ 25, 100, 50 ],
+            "position": [ 400, 9175, 0 ],
+            "shape": [ 50, 25, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -13075,21 +13355,21 @@
       ]
     },
     {
-      "id": "ThirdSegmentSpike19",
+      "id": "ThirdSegmentSpikeSet7-4",
       "tag": "Spike",
       "components": [
         {
           "type": "TransformComponent",
           "attributes": {
             "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 1, 1 ]
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "cube.mesh",
+            "mesh": "Spike.mesh",
             "node": "nSpike",
             "material": "RedColourMaterial"
           }
@@ -13097,8 +13377,8 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -225, 10700, 0 ],
-            "shape": [ 25, 50, 50 ],
+            "position": [ 400, 9225, 0 ],
+            "shape": [ 50, 25, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -13115,21 +13395,1541 @@
       ]
     },
     {
-      "id": "ThirdSegmentSpike20",
+      "id": "ThirdSegmentSpikeSet8-1",
       "tag": "Spike",
       "components": [
         {
           "type": "TransformComponent",
           "attributes": {
             "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 2, 0.5, 1 ]
+            "orientation": [ 0, 0, -90 ],
+            "scale": [ 80, 80, 80 ]
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "cube.mesh",
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 150, 9250, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    }, // Set 8
+    {
+      "id": "ThirdSegmentSpikeSet9-1",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -150, 9250, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    }, // Set 9
+    {
+      "id": "ThirdSegmentSpikeSet10-1",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, -90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -400, 8975, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    }, // Set 10
+    {
+      "id": "ThirdSegmentSpikeSet10-2",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, -90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -400, 9025, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "id": "ThirdSegmentSpikeSet11-1",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, -90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -400, 9375, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    }, // Set 11
+    {
+      "id": "ThirdSegmentSpikeSet11-2",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, -90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -400, 9425, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "id": "ThirdSegmentSpikeSet11-3",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, -90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -400, 9475, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "id": "ThirdSegmentSpikeSet11-4",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, -90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -400, 9525, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "id": "ThirdSegmentSpikeSet11-5",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, -90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -400, 9575, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "id": "ThirdSegmentSpikeSet11-6",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, -90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -400, 9625, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "id": "ThirdSegmentSpikeSet12-1",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, -90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 150, 9475, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    }, // Set 12
+    {
+      "id": "ThirdSegmentSpikeSet12-2",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, -90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 150, 9525, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "id": "ThirdSegmentSpikeSet13-1",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -150, 9475, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    }, // Set 13
+    {
+      "id": "ThirdSegmentSpikeSet13-2",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -150, 9525, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "id": "ThirdSegmentSpikeSet14-1",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 400, 9575, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    }, // Set 14
+    {
+      "id": "ThirdSegmentSpikeSet14-2",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 400, 9625, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "id": "ThirdSegmentSpikeSet14-3",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 400, 9675, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "id": "ThirdSegmentSpikeSet14-4",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 400, 9725, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "id": "ThirdSegmentSpikeSet14-5",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 400, 9775, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "id": "ThirdSegmentSpikeSet14-6",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 400, 9825, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "id": "ThirdSegmentSpikeSet15-1",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -200, 9975, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    }, // Set 15
+    {
+      "id": "ThirdSegmentSpikeSet15-2",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -200, 10025, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "id": "ThirdSegmentSpikeSet15-3",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -200, 10075, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "id": "ThirdSegmentSpikeSet15-4",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -200, 10125, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "id": "ThirdSegmentSpikeSet16-1",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, -90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 0, 9975, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    }, // Set 16
+    {
+      "id": "ThirdSegmentSpikeSet16-2",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, -90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 0, 10025, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "id": "ThirdSegmentSpikeSet16-3",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, -90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 0, 10075, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "id": "ThirdSegmentSpikeSet16-4",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, -90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 0, 10125, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "id": "ThirdSegmentSpikeSet17-1",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 400, 10525, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    }, // Set 17
+    {
+      "id": "ThirdSegmentSpikeSet17-2",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 400, 10575, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "id": "ThirdSegmentSpikeSet17-3",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 400, 10625, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "id": "ThirdSegmentSpikeSet17-4",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 400, 10675, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "id": "ThirdSegmentSpikeSet18-1",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, -90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 100, 10525, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    }, // Set 18
+    {
+      "id": "ThirdSegmentSpikeSet18-2",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, -90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 100, 10575, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "id": "ThirdSegmentSpikeSet18-3",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, -90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 100, 10625, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "id": "ThirdSegmentSpikeSet18-4",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, -90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 100, 10675, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "id": "ThirdSegmentSpikeSet19-1",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -200, 10675, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    }, // Set 19
+    {
+      "id": "ThirdSegmentSpikeSet19-2",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -200, 10725, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "id": "ThirdSegmentSpikeSet20-1",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 180 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
             "node": "nSpike",
             "material": "RedColourMaterial"
           }
@@ -13138,7 +14938,47 @@
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ 300, 8750, 0 ],
-            "shape": [ 100, 25, 50 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    }, // Set 20
+    {
+      "id": "ThirdSegmentSpikeSet20-2",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 180 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 250, 8750, 0 ],
+            "shape": [ 50, 25, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -13155,21 +14995,61 @@
       ]
     },
     {
-      "id": "ThirdSegmentSpike21",
+      "id": "ThirdSegmentSpikeSet21-1",
       "tag": "Spike",
       "components": [
         {
           "type": "TransformComponent",
           "attributes": {
             "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 2, 0.25, 1 ]
+            "orientation": [ 0, 0, 180 ],
+            "scale": [ 80, 80, 80 ]
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "cube.mesh",
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 200, 10112.5, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    }, // Set 21
+    {
+      "id": "ThirdSegmentSpikeSet21-2",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 180 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
             "node": "nSpike",
             "material": "RedColourMaterial"
           }
@@ -13178,7 +15058,47 @@
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ 250, 10112.5, 0 ],
-            "shape": [ 100, 12.5, 50 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "id": "ThirdSegmentSpikeSet21-3",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 180 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 300, 10112.5, 0 ],
+            "shape": [ 50, 25, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -13197,21 +15117,21 @@
 
     // Fourth Segment of the Game (22)
     {
-      "id": "FourthSegmentSpike1",
+      "id": "FourthSegmentSpikeSet1-1",
       "tag": "Spike",
       "components": [
         {
           "type": "TransformComponent",
           "attributes": {
             "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 1, 1 ]
+            "orientation": [ 0, 0, -90 ],
+            "scale": [ 80, 80, 80 ]
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "cube.mesh",
+            "mesh": "Spike.mesh",
             "node": "nSpike",
             "material": "RedColourMaterial"
           }
@@ -13219,8 +15139,48 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -375, 10950, 0 ],
-            "shape": [ 25, 50, 50 ],
+            "position": [ -400, 10925, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    }, // Set 1
+    {
+      "id": "FourthSegmentSpikeSet1-2",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, -90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -400, 10975, 0 ],
+            "shape": [ 50, 25, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -13237,21 +15197,21 @@
       ]
     },
     {
-      "id": "FourthSegmentSpike2",
+      "id": "FourthSegmentSpikeSet2-1",
       "tag": "Spike",
       "components": [
         {
           "type": "TransformComponent",
           "attributes": {
             "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 1, 1 ]
+            "orientation": [ 0, 0, -90 ],
+            "scale": [ 80, 80, 80 ]
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "cube.mesh",
+            "mesh": "Spike.mesh",
             "node": "nSpike",
             "material": "RedColourMaterial"
           }
@@ -13259,8 +15219,48 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -375, 11150, 0 ],
-            "shape": [ 25, 50, 50 ],
+            "position": [ -400, 11125, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    }, // Set 2
+    {
+      "id": "FourthSegmentSpikeSet2-2",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, -90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -400, 11175, 0 ],
+            "shape": [ 50, 25, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -13277,21 +15277,21 @@
       ]
     },
     {
-      "id": "FourthSegmentSpike3",
+      "id": "FourthSegmentSpikeSet3-1",
       "tag": "Spike",
       "components": [
         {
           "type": "TransformComponent",
           "attributes": {
             "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 1, 1 ]
+            "orientation": [ 0, 0, -90 ],
+            "scale": [ 80, 80, 80 ]
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "cube.mesh",
+            "mesh": "Spike.mesh",
             "node": "nSpike",
             "material": "RedColourMaterial"
           }
@@ -13299,8 +15299,48 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -375, 11350, 0 ],
-            "shape": [ 25, 50, 50 ],
+            "position": [ -400, 11325, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    }, // Set 3
+    {
+      "id": "FourthSegmentSpikeSet3-2",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, -90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -400, 11375, 0 ],
+            "shape": [ 50, 25, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -13317,21 +15357,21 @@
       ]
     },
     {
-      "id": "FourthSegmentSpike4",
+      "id": "FourthSegmentSpikeSet4-1",
       "tag": "Spike",
       "components": [
         {
           "type": "TransformComponent",
           "attributes": {
             "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 1, 1 ]
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "cube.mesh",
+            "mesh": "Spike.mesh",
             "node": "nSpike",
             "material": "RedColourMaterial"
           }
@@ -13339,8 +15379,48 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -175, 11050, 0 ],
-            "shape": [ 25, 50, 50 ],
+            "position": [ -150, 11025, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    }, // Set 4
+    {
+      "id": "FourthSegmentSpikeSet4-2",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -150, 11075, 0 ],
+            "shape": [ 50, 25, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -13357,21 +15437,21 @@
       ]
     },
     {
-      "id": "FourthSegmentSpike5",
+      "id": "FourthSegmentSpikeSet5-1",
       "tag": "Spike",
       "components": [
         {
           "type": "TransformComponent",
           "attributes": {
             "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 1, 1 ]
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "cube.mesh",
+            "mesh": "Spike.mesh",
             "node": "nSpike",
             "material": "RedColourMaterial"
           }
@@ -13379,8 +15459,48 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -175, 11250, 0 ],
-            "shape": [ 25, 50, 50 ],
+            "position": [ -150, 11225, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    }, // Set 5
+    {
+      "id": "FourthSegmentSpikeSet5-2",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -150, 11275, 0 ],
+            "shape": [ 50, 25, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -13397,21 +15517,21 @@
       ]
     },
     {
-      "id": "FourthSegmentSpike6",
+      "id": "FourthSegmentSpikeSet6-1",
       "tag": "Spike",
       "components": [
         {
           "type": "TransformComponent",
           "attributes": {
             "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 1, 1 ]
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "cube.mesh",
+            "mesh": "Spike.mesh",
             "node": "nSpike",
             "material": "RedColourMaterial"
           }
@@ -13419,8 +15539,48 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 375, 10950, 0 ],
-            "shape": [ 25, 50, 50 ],
+            "position": [ 400, 10925, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    }, // Set 6
+    {
+      "id": "FourthSegmentSpikeSet6-2",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 400, 10975, 0 ],
+            "shape": [ 50, 25, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -13437,21 +15597,21 @@
       ]
     },
     {
-      "id": "FourthSegmentSpike7",
+      "id": "FourthSegmentSpikeSet7-1",
       "tag": "Spike",
       "components": [
         {
           "type": "TransformComponent",
           "attributes": {
             "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 1, 1 ]
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "cube.mesh",
+            "mesh": "Spike.mesh",
             "node": "nSpike",
             "material": "RedColourMaterial"
           }
@@ -13459,8 +15619,48 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 375, 11150, 0 ],
-            "shape": [ 25, 50, 50 ],
+            "position": [ 400, 11125, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    }, // Set 7
+    {
+      "id": "FourthSegmentSpikeSet7-2",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 400, 11175, 0 ],
+            "shape": [ 50, 25, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -13477,21 +15677,21 @@
       ]
     },
     {
-      "id": "FourthSegmentSpike8",
+      "id": "FourthSegmentSpikeSet8-1",
       "tag": "Spike",
       "components": [
         {
           "type": "TransformComponent",
           "attributes": {
             "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 1, 1 ]
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "cube.mesh",
+            "mesh": "Spike.mesh",
             "node": "nSpike",
             "material": "RedColourMaterial"
           }
@@ -13499,8 +15699,48 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 375, 11350, 0 ],
-            "shape": [ 25, 50, 50 ],
+            "position": [ 400, 11325, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    }, // Set 8
+    {
+      "id": "FourthSegmentSpikeSet8-2",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 400, 11375, 0 ],
+            "shape": [ 50, 25, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -13517,21 +15757,21 @@
       ]
     },
     {
-      "id": "FourthSegmentSpike9",
+      "id": "FourthSegmentSpikeSet9-1",
       "tag": "Spike",
       "components": [
         {
           "type": "TransformComponent",
           "attributes": {
             "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 1, 1 ]
+            "orientation": [ 0, 0, -90 ],
+            "scale": [ 80, 80, 80 ]
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "cube.mesh",
+            "mesh": "Spike.mesh",
             "node": "nSpike",
             "material": "RedColourMaterial"
           }
@@ -13539,8 +15779,48 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 175, 11050, 0 ],
-            "shape": [ 25, 50, 50 ],
+            "position": [ 150, 11025, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    }, // Set 9
+    {
+      "id": "FourthSegmentSpikeSet9-2",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, -90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 150, 11075, 0 ],
+            "shape": [ 50, 25, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -13557,21 +15837,21 @@
       ]
     },
     {
-      "id": "FourthSegmentSpike10",
+      "id": "FourthSegmentSpikeSet10-1",
       "tag": "Spike",
       "components": [
         {
           "type": "TransformComponent",
           "attributes": {
             "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 1, 1 ]
+            "orientation": [ 0, 0, -90 ],
+            "scale": [ 80, 80, 80 ]
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "cube.mesh",
+            "mesh": "Spike.mesh",
             "node": "nSpike",
             "material": "RedColourMaterial"
           }
@@ -13579,8 +15859,48 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 175, 11250, 0 ],
-            "shape": [ 25, 50, 50 ],
+            "position": [ 150, 11225, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    }, // Set 10
+    {
+      "id": "FourthSegmentSpikeSet10-2",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, -90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 150, 11275, 0 ],
+            "shape": [ 50, 25, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -13597,21 +15917,21 @@
       ]
     },
     {
-      "id": "FourthSegmentSpike11",
+      "id": "FourthSegmentSpikeSet11-1",
       "tag": "Spike",
       "components": [
         {
           "type": "TransformComponent",
           "attributes": {
             "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 1.5, 1 ]
+            "orientation": [ 0, 0, -90 ],
+            "scale": [ 80, 80, 80 ]
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "cube.mesh",
+            "mesh": "Spike.mesh",
             "node": "nSpike",
             "material": "RedColourMaterial"
           }
@@ -13619,8 +15939,48 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 225, 11550, 0 ],
-            "shape": [ 25, 75, 50 ],
+            "position": [ 200, 11500, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    }, // Set 11
+    {
+      "id": "FourthSegmentSpikeSet11-2",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, -90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 200, 11550, 0 ],
+            "shape": [ 50, 25, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -13637,21 +15997,21 @@
       ]
     },
     {
-      "id": "FourthSegmentSpike12",
+      "id": "FourthSegmentSpikeSet11-3",
       "tag": "Spike",
       "components": [
         {
           "type": "TransformComponent",
           "attributes": {
             "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 1.5, 1 ]
+            "orientation": [ 0, 0, -90 ],
+            "scale": [ 80, 80, 80 ]
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "cube.mesh",
+            "mesh": "Spike.mesh",
             "node": "nSpike",
             "material": "RedColourMaterial"
           }
@@ -13659,8 +16019,8 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -225, 11550, 0 ],
-            "shape": [ 25, 75, 50 ],
+            "position": [ 200, 11600, 0 ],
+            "shape": [ 50, 25, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -13677,21 +16037,21 @@
       ]
     },
     {
-      "id": "FourthSegmentSpike13",
+      "id": "FourthSegmentSpikeSet12-1",
       "tag": "Spike",
       "components": [
         {
           "type": "TransformComponent",
           "attributes": {
             "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 2, 1 ]
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "cube.mesh",
+            "mesh": "Spike.mesh",
             "node": "nSpike",
             "material": "RedColourMaterial"
           }
@@ -13699,8 +16059,48 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -375, 11800, 0 ],
-            "shape": [ 25, 100, 50 ],
+            "position": [ -200, 11500, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    }, // Set 12
+    {
+      "id": "FourthSegmentSpikeSet12-2",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -200, 11550, 0 ],
+            "shape": [ 50, 25, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -13717,21 +16117,21 @@
       ]
     },
     {
-      "id": "FourthSegmentSpike14",
+      "id": "FourthSegmentSpikeSet12-3",
       "tag": "Spike",
       "components": [
         {
           "type": "TransformComponent",
           "attributes": {
             "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 2, 1 ]
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "cube.mesh",
+            "mesh": "Spike.mesh",
             "node": "nSpike",
             "material": "RedColourMaterial"
           }
@@ -13739,8 +16139,8 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -125, 11850, 0 ],
-            "shape": [ 25, 100, 50 ],
+            "position": [ -200, 11600, 0 ],
+            "shape": [ 50, 25, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -13757,21 +16157,21 @@
       ]
     },
     {
-      "id": "FourthSegmentSpike15",
+      "id": "FourthSegmentSpikeSet13-1",
       "tag": "Spike",
       "components": [
         {
           "type": "TransformComponent",
           "attributes": {
             "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 2, 1 ]
+            "orientation": [ 0, 0, -90 ],
+            "scale": [ 80, 80, 80 ]
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "cube.mesh",
+            "mesh": "Spike.mesh",
             "node": "nSpike",
             "material": "RedColourMaterial"
           }
@@ -13779,8 +16179,48 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 375, 11800, 0 ],
-            "shape": [ 25, 100, 50 ],
+            "position": [ -400, 11725, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    }, // Set 13
+    {
+      "id": "FourthSegmentSpikeSet13-2",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, -90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -400, 11775, 0 ],
+            "shape": [ 50, 25, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -13797,21 +16237,21 @@
       ]
     },
     {
-      "id": "FourthSegmentSpike16",
+      "id": "FourthSegmentSpikeSet13-3",
       "tag": "Spike",
       "components": [
         {
           "type": "TransformComponent",
           "attributes": {
             "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 2, 1 ]
+            "orientation": [ 0, 0, -90 ],
+            "scale": [ 80, 80, 80 ]
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "cube.mesh",
+            "mesh": "Spike.mesh",
             "node": "nSpike",
             "material": "RedColourMaterial"
           }
@@ -13819,8 +16259,8 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 125, 11850, 0 ],
-            "shape": [ 25, 100, 50 ],
+            "position": [ -400, 11825, 0 ],
+            "shape": [ 50, 25, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -13837,21 +16277,21 @@
       ]
     },
     {
-      "id": "FourthSegmentSpike17",
+      "id": "FourthSegmentSpikeSet13-4",
       "tag": "Spike",
       "components": [
         {
           "type": "TransformComponent",
           "attributes": {
             "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 2, 1 ]
+            "orientation": [ 0, 0, -90 ],
+            "scale": [ 80, 80, 80 ]
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "cube.mesh",
+            "mesh": "Spike.mesh",
             "node": "nSpike",
             "material": "RedColourMaterial"
           }
@@ -13859,8 +16299,8 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -125, 12250, 0 ],
-            "shape": [ 25, 100, 50 ],
+            "position": [ -400, 11875, 0 ],
+            "shape": [ 50, 25, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -13877,21 +16317,21 @@
       ]
     },
     {
-      "id": "FourthSegmentSpike18",
+      "id": "FourthSegmentSpikeSet14-1",
       "tag": "Spike",
       "components": [
         {
           "type": "TransformComponent",
           "attributes": {
             "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 2, 1 ]
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "cube.mesh",
+            "mesh": "Spike.mesh",
             "node": "nSpike",
             "material": "RedColourMaterial"
           }
@@ -13899,8 +16339,48 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 125, 12250, 0 ],
-            "shape": [ 25, 100, 50 ],
+            "position": [ -100, 11775, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    }, // Set 14
+    {
+      "id": "FourthSegmentSpikeSet14-2",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -100, 11825, 0 ],
+            "shape": [ 50, 25, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -13917,21 +16397,21 @@
       ]
     },
     {
-      "id": "FourthSegmentSpike19",
+      "id": "FourthSegmentSpikeSet14-3",
       "tag": "Spike",
       "components": [
         {
           "type": "TransformComponent",
           "attributes": {
             "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 0.5, 1 ]
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "cube.mesh",
+            "mesh": "Spike.mesh",
             "node": "nSpike",
             "material": "RedColourMaterial"
           }
@@ -13939,8 +16419,8 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -125, 12650, 0 ],
-            "shape": [ 25, 25, 50 ],
+            "position": [ -100, 11875, 0 ],
+            "shape": [ 50, 25, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -13957,21 +16437,21 @@
       ]
     },
     {
-      "id": "FourthSegmentSpike20",
+      "id": "FourthSegmentSpikeSet14-4",
       "tag": "Spike",
       "components": [
         {
           "type": "TransformComponent",
           "attributes": {
             "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 0.5, 1 ]
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "cube.mesh",
+            "mesh": "Spike.mesh",
             "node": "nSpike",
             "material": "RedColourMaterial"
           }
@@ -13979,8 +16459,8 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 125, 12650, 0 ],
-            "shape": [ 25, 25, 50 ],
+            "position": [ -100, 11925, 0 ],
+            "shape": [ 50, 25, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -13997,21 +16477,21 @@
       ]
     },
     {
-      "id": "FourthSegmentSpike21",
+      "id": "FourthSegmentSpikeSet15-1",
       "tag": "Spike",
       "components": [
         {
           "type": "TransformComponent",
           "attributes": {
             "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 0.5, 1 ]
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "cube.mesh",
+            "mesh": "Spike.mesh",
             "node": "nSpike",
             "material": "RedColourMaterial"
           }
@@ -14019,8 +16499,48 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ -125, 13100, 0 ],
-            "shape": [ 25, 25, 50 ],
+            "position": [ 400, 11725, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    }, // Set 15
+    {
+      "id": "FourthSegmentSpikeSet15-2",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 400, 11775, 0 ],
+            "shape": [ 50, 25, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -14037,21 +16557,21 @@
       ]
     },
     {
-      "id": "FourthSegmentSpike22",
+      "id": "FourthSegmentSpikeSet15-3",
       "tag": "Spike",
       "components": [
         {
           "type": "TransformComponent",
           "attributes": {
             "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.5, 0.5, 1 ]
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
           }
         },
         {
           "type": "TridimensionalObjectRC",
           "attributes": {
-            "mesh": "cube.mesh",
+            "mesh": "Spike.mesh",
             "node": "nSpike",
             "material": "RedColourMaterial"
           }
@@ -14059,8 +16579,8 @@
         {
           "type": "RigidbodyPC",
           "attributes": {
-            "position": [ 125, 13100, 0 ],
-            "shape": [ 25, 25, 50 ],
+            "position": [ 400, 11825, 0 ],
+            "shape": [ 50, 25, 30 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": false,
@@ -14075,6 +16595,686 @@
           "attributes": {}
         }
       ]
-    }
+    },
+    {
+      "id": "FourthSegmentSpikeSet15-4",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 400, 11875, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "id": "FourthSegmentSpikeSet16-1",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, -90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 100, 11775, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    }, // Set 16
+    {
+      "id": "FourthSegmentSpikeSet16-2",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, -90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 100, 11825, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "id": "FourthSegmentSpikeSet16-3",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, -90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 100, 11875, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "id": "FourthSegmentSpikeSet16-4",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, -90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 100, 11925, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "id": "FourthSegmentSpikeSet17-1",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -100, 12175, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    }, // Set 17
+    {
+      "id": "FourthSegmentSpikeSet17-2",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -100, 12225, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "id": "FourthSegmentSpikeSet17-3",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -100, 12275, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "id": "FourthSegmentSpikeSet17-4",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -100, 12325, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "id": "FourthSegmentSpikeSet18-1",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, -90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 100, 12175, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    }, // Set 18
+    {
+      "id": "FourthSegmentSpikeSet18-2",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, -90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 100, 12225, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "id": "FourthSegmentSpikeSet18-3",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, -90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 100, 12275, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "id": "FourthSegmentSpikeSet18-4",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, -90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 100, 12325, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "id": "FourthSegmentSpikeSet19-1",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 90 ],
+            "scale": [80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -100, 12650, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    }, // Set 19
+    {
+      "id": "FourthSegmentSpikeSet20-1",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, -90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 100, 12650, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    }, // Set 20
+    {
+      "id": "FourthSegmentSpikeSet21-1",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ -100, 13100, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    }, // Set 21
+    {
+      "id": "FourthSegmentSpikeSet22-1",
+      "tag": "Spike",
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, -90 ],
+            "scale": [ 80, 80, 80 ]
+          }
+        },
+        {
+          "type": "TridimensionalObjectRC",
+          "attributes": {
+            "mesh": "Spike.mesh",
+            "node": "nSpike",
+            "material": "RedColourMaterial"
+          }
+        },
+        {
+          "type": "RigidbodyPC",
+          "attributes": {
+            "position": [ 100, 13100, 0 ],
+            "shape": [ 50, 25, 30 ],
+            "mass": 1,
+            "gravity": [ 0, 0, 0 ],
+            "trigger": false,
+            "kinematic": false,
+            "static": true,
+            "friction": 0,
+            "restitution": 0
+          }
+        },
+        {
+          "type": "SpikeEC",
+          "attributes": {}
+        }
+      ]
+    }  // Set 22
   ]
 }
