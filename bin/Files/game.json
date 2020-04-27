@@ -1720,7 +1720,7 @@
           "type": "RigidbodyPC",
           "attributes": {
             "position": [ -275, 11100, 0 ],
-            "shape": [ 50, 50, 50 ],
+            "shape": [ 20, 20, 20 ],
             "mass": 1,
             "gravity": [ 0, 0, 0 ],
             "trigger": true,
