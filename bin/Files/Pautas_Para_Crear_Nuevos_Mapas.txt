@@ -1,0 +1,28 @@
+Estas son algunas de las pautas necesarias para poder crear nuevos niveles para
+el título G·Shift. Un nivel G·Shift consiste en un gran tubo vertical que el
+jugador va subiendo constantemente. En el camino hay varios obstáculos, ya sean
+bloques, picos, huecos, o una combinación de los tres y la ambición de querer
+obtener todas las monedas que se hayan perdidas flotando por el camino.
+
+En un nivel más técnico, el mapa deberá estar formado por cuatro partes:
+1. Una mesh hecha exclusivamente para el lado izquierdo del mapa.
+2. Una mesh hecha exclusivamente para el lado derecho del mapa.
+3. Una mesh para los picos del mapa (de otra forma, el juego podrá ser experimentado 
+   en cámara lenta por el desarrollador (!!!))
+4. En el documento .json donde se ha de definir el nivel, agregar manualmente las
+   malas para dar rigidez a los cuerpos del juego.
+
+Recuerda, G·Shift es un juego para descubrir nuevos horizontes y retar a los diseños
+convencionales, pero asegurate de no ir demasiado rápido, y recordar usar en su caso
+deseable (> 90%) los susodichos modelos convencionales, pues los cuerpos rígidos se
+hacen uno a uno, colocando tamaños y posiciones con exactitud milimétrica (ó 0,03937
+pulgadas para las sectas). A mayor cantidad de elementos en el nivel, mayor la cantidad
+de cuerpos rígidos en el mismo :)
+
+Pero sobre todo recuera, construir niveles de G·Shift con las pautas previamente dichas
+es cosa de niños(!). ¡Tan fácil que hasta Gonzalo podría hacerlo!
+
+Disclaimer (porque al parecer es un concepto anglosajón):
+El autor de este documento que se acaba y se sigue leyendo mientras se lee el disclaimer
+no se hace cargo de cualquier posible error ocurrido con programas para la creación
+de niveles de G·Shift como Blender. Favor contactarlo en caso de alguna duda.
