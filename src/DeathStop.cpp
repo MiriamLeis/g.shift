@@ -14,7 +14,7 @@ DeathStopEC::DeathStopEC() {}
 DeathStopEC::~DeathStopEC() {}
 
 void DeathStopEC::checkEvent() {
-    Entity* player = scene->getEntitybyId("Player");
+    Entity* player = scene_->getEntityById("Player");
     auto rigid =
         reinterpret_cast<RigidbodyPC*>(player->getComponent("RigidbodyPC"));
     if (rigid->getLinearVelocity().y <= 0)
@@ -23,11 +23,11 @@ void DeathStopEC::checkEvent() {
 
 void DeathStopEC::destroy() {
     setActive(false);
-    scene->getComponentsManager()->eraseEC(this);
+    scene_->getComponentsManager()->eraseEC(this);
 }
 
 void DeathStopEC::playerDeath() {
-    scene->changeScene("DeadMenu");
+    scene_->changeScene("DeadMenu");
     std::cout << "\n PLAYER DEAD \n"; // PROVISIONAL
 }
 

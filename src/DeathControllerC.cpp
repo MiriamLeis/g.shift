@@ -11,11 +11,11 @@
 
 void DeathControllerC::destroy() {
     setActive(false);
-    scene->getComponentsManager()->eraseDC(this);
+    scene_->getComponentsManager()->eraseDC(this);
 }
 
 void DeathControllerC::playerDeath() {
-    scene->changeScene("DeadMenu");
+    scene_->changeScene("DeadMenu");
     std::cout << "\n PLAYER DEAD \n"; // PROVISIONAL
 }
 

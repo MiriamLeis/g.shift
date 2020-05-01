@@ -11,7 +11,7 @@
 
 void CoinCounterC::destroy() {
     setActive(false);
-    scene->getComponentsManager()->eraseDC(this);
+    scene_->getComponentsManager()->eraseDC(this);
 }
 
 int CoinCounterC::getTotalCoins() { return totalCoins_; }

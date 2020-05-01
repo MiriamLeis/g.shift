@@ -11,12 +11,12 @@
 
 void OutOfBoundsEC::checkEvent() {
     TransformComponent* transform = reinterpret_cast<TransformComponent*>(
-        scene->getEntitybyId("Player")->getComponent("TransformComponent"));
+        scene_->getEntityById("Player")->getComponent("TransformComponent"));
 
     if (transform->getPosition().x > rightBorder ||
         transform->getPosition().x < leftBorder) {
         reinterpret_cast<DeathControllerC*>(
-            scene->getEntitybyId("Player")->getComponent("DeathControllerC"))
+            scene_->getEntityById("Player")->getComponent("DeathControllerC"))
             ->playerDeath();
     }
 }

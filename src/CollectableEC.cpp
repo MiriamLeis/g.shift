@@ -11,16 +11,16 @@
 
 void CollectableEC::destroy() {
     setActive(false);
-    scene->getComponentsManager()->eraseEC(this);
+    scene_->getComponentsManager()->eraseEC(this);
 }
 
 void CollectableEC::checkEvent() {
-    if (reinterpret_cast<RigidbodyPC*>(father->getComponent("RigidbodyPC"))
+    if (reinterpret_cast<RigidbodyPC*>(father_->getComponent("RigidbodyPC"))
             ->collidesWith("Player")) {
         reinterpret_cast<CoinCounterC*>(
-            scene->getEntitybyId("GameManager")->getComponent("CoinCounterC"))
+            scene_->getEntityById("GameManager")->getComponent("CoinCounterC"))
             ->pickCoin();
-        scene->deleteEntity(father);
+        scene_->deleteEntity(father_);
     }
 }
 
@@ -30,7 +30,7 @@ void CollectableEC::setValue(int value) { value_ = value; }
 
 void CollectableEC::setAnimations() {
     animations =
-        reinterpret_cast<AnimationLC*>(father->getComponent("AnimationLC"));
+        reinterpret_cast<AnimationLC*>(father_->getComponent("AnimationLC"));
 }
 
 void CollectableEC::playAnimation() { animations->startAnimation("idle"); }

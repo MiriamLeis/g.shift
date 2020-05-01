@@ -7,10 +7,10 @@
 #include "Scene.h"
 
 void SpikeEC::checkEvent() {
-    if (reinterpret_cast<RigidbodyPC*>(father->getComponent("RigidbodyPC"))
+    if (reinterpret_cast<RigidbodyPC*>(father_->getComponent("RigidbodyPC"))
             ->collidesWith("Player")) {
         reinterpret_cast<DeathControllerC*>(
-            scene->getEntitybyId("GameManager")
+            scene_->getEntityById("GameManager")
                 ->getComponent("DeathControllerC"))
             ->playerDeath();
     }

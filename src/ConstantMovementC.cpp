@@ -16,14 +16,14 @@ ConstantMovementC::~ConstantMovementC() {}
 
 void ConstantMovementC::destroy() {
     setActive(false);
-    scene->getComponentsManager()->eraseDC(this);
+    scene_->getComponentsManager()->eraseDC(this);
 }
 
 void ConstantMovementC::setSpeed(float _speed) {
     speed = _speed;
 
     RigidbodyPC* body =
-        dynamic_cast<RigidbodyPC*>(father->getComponent("RigidbodyPC"));
+        dynamic_cast<RigidbodyPC*>(father_->getComponent("RigidbodyPC"));
 
     body->setLinearVelocity(Ogre::Vector3(0.0f, speed, 0.0f));
 }
