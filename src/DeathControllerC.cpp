@@ -2,12 +2,11 @@
 #include "ComponentsManager.h"
 #include "Entity.h"
 #include "FactoriesFactory.h"
+#include "PlayMusicOnStartC.h"
 #include "RigidbodyPC.h"
 #include "Scene.h"
 
 #include <json.h>
-
-#include <iostream> // PROVISIONAL
 
 void DeathControllerC::destroy() {
     setActive(false);
@@ -16,7 +15,8 @@ void DeathControllerC::destroy() {
 
 void DeathControllerC::playerDeath() {
     scene_->changeScene("DeadMenu");
-    std::cout << "\n PLAYER DEAD \n"; // PROVISIONAL
+    dynamic_cast<PlayMusicOnStartC*>(father_->getComponent("PlayMusicOnStartC"))
+        ->setMusic("menuMusic");
 }
 
 // FACTORY INFRASTRUCTURE

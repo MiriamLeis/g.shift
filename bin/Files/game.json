@@ -17,11 +17,23 @@
           "type": "CameraRC",
           "attributes": {
             "node": "nCamera",
-            "viewportColour": [ 0.1, 0.1, 0.1 ],
+            "viewportColour": [ 0.0, 0.0, 0.0 ],
             "offset": [ 0, 0, 1000 ],
             "lookAt": [ 0, 0, -1 ],
             "targetId": "Player",
             "follow": [ false, true, false ]
+          }
+        }
+      ]
+    },
+    // Game Light
+    {
+      "id": "Light",
+      "components": [
+        {
+          "type": "AmbientLightC",
+          "attributes": {
+            "colour": [ 0.5, 0.0, 0.5 ]
           }
         },
         {
@@ -30,6 +42,21 @@
             "node": "nSpotLight",
             "colour": [ 1, 1, 1 ],
             "direction": [ 0, -1, -1 ]
+          }
+        }
+      ]
+    },
+    // Game Background
+    {
+      "id": "Background",
+      "components": [
+        {
+          "type": "SkyPlaneObjectC",
+          "attributes": {
+            "normal": "Z",
+            "distance": -100,
+            "bow": 0.0,
+            "material": "BackgroundTexture"
           }
         }
       ]
@@ -51,6 +78,18 @@
         {
           "type": "DeathStopEC",
           "attributes": {}
+        },
+        {
+          "type": "SoundComponent",
+          "attributes": {
+            "sounds": ["gameMusic", "menuMusic"]
+          }
+        },
+        {
+          "type": "PlayMusicOnStartC",
+          "attributes": {
+            "sound": "gameMusic"
+          }
         }
       ]
     },
@@ -72,7 +111,7 @@
           "attributes": {
             "mesh": "cube.mesh",
             "node": "nPlayer",
-            "material": "PinkColourMaterial"
+            "material": "PurpleColourMaterial"
           }
         },
         {
@@ -90,11 +129,28 @@
           }
         },
         {
+          "type": "ParticleC",
+          "attributes": {
+            "particles": [
+              {
+                "name": "Sparks",
+                "particleName": "SparksParticle"
+              }
+            ]
+          }
+        },
+        {
+          "type": "EmitOnStartC",
+          "attributes": {
+            "name": "Sparks"
+          }
+        },
+        {
           "type": "ChangeGravityIC",
           "attributes": {
             "speed": 250,
-            "materialL": "PinkColourMaterial",
-            "materialR": "BlueColourMaterial"
+            "colourL" : [0.5, 0, 0.5],
+            "colourR" : [0, 0, 0.8]
           }
         },
         {

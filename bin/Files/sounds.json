@@ -1,4 +1,16 @@
 {
   "sounds": [
+    {
+      "id": "gameMusic",
+      "filename": "game.mp3",
+      "loop": true,
+      "volume": 1.0
+    },
+    {
+      "id": "menuMusic",
+      "filename": "menu.wav",
+      "loop": true,
+      "volume": 1.0
+    }
   ]
 }

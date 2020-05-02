@@ -1,18 +1,50 @@
-material GrassMaterial
+material SparksTexture
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			scene_blend alpha_blend
+			depth_write off
+			diffuse vertexcolour
+
+			texture_unit
+			{
+				texture sparks.png
+				tex_address_mode clamp
+			}
+		}
+	}
+}
+
+material BackgroundTexture
 {
     technique 
     {
         pass 
-        { // first pass                //OPCIONAL CON LAS TEXTURAS. SI LO QUITAS, DEBES QUITAR COLOUR_OP (EJ ABAJO DE ESTA TEXTURA). AUN ASI, LO UNICO IMPORTANTE ES DIFFUSE
-            diffuse 0.11 0.31 0.11 1.00
-            
-            texture_unit 
-            {
-                texture grass_1024.jpg
-                colour_op add
-                tex_address_mode wrap
+        {
+            texture_unit texture0 
+            { // * ‐> int 0
+                // archivo
+                texture lightMap.jpg 2d 
+                // sólo configuración
+                // wrap (repeat), clamp, mirror
+                tex_address_mode wrap 
+                // de acceso al texel
+                // nearest, linear, bilinear, none
+                filtering bilinear 
             }
-        }
+            texture_unit texture1 
+            { // * ‐> int 1
+                // archivo
+                texture background.png 2d 
+                // sólo configuración
+                tex_address_mode wrap 
+                
+                scroll_anim 0.0 0.05
+            } // de acceso al texel
+        } 
     }
 }
 
@@ -22,29 +54,7 @@ material PurpleColourMaterial
     {
         pass 
         { // first pass                //OPCIONAL CON LAS TEXTURAS. SI LO QUITAS, DEBES QUITAR COLOUR_OP (EJ ABAJO DE ESTA TEXTURA). AUN ASI, LO UNICO IMPORTANTE ES DIFFUSE
-            diffuse 0.40 0.02 0.66 1.00
-        }
-    }
-}
-
-material OrangeColourMaterial
-{
-    technique 
-    {
-        pass 
-        { // first pass                //OPCIONAL CON LAS TEXTURAS. SI LO QUITAS, DEBES QUITAR COLOUR_OP (EJ ABAJO DE ESTA TEXTURA). AUN ASI, LO UNICO IMPORTANTE ES DIFFUSE
-            diffuse 1.00 0.77 0.00 1.00
-        }
-    }
-}
-
-material BrownColourMaterial
-{
-    technique 
-    {
-        pass 
-        { // first pass                //OPCIONAL CON LAS TEXTURAS. SI LO QUITAS, DEBES QUITAR COLOUR_OP (EJ ABAJO DE ESTA TEXTURA). AUN ASI, LO UNICO IMPORTANTE ES DIFFUSE
-            diffuse 0.32 0.24 0.16 1.00
+            diffuse 0.53 0.00 1.00 1.00
         }
     }
 }
@@ -55,7 +65,7 @@ material BlueColourMaterial
     {
         pass 
         { // first pass                //OPCIONAL CON LAS TEXTURAS. SI LO QUITAS, DEBES QUITAR COLOUR_OP (EJ ABAJO DE ESTA TEXTURA). AUN ASI, LO UNICO IMPORTANTE ES DIFFUSE
-            diffuse 0.00 0.68 0.95 1.00
+            diffuse 0.53 0.53 0.53 1.00
         }
     }
 }
@@ -66,40 +76,12 @@ material PinkColourMaterial
     {
         pass 
         { // first pass                //OPCIONAL CON LAS TEXTURAS. SI LO QUITAS, DEBES QUITAR COLOUR_OP (EJ ABAJO DE ESTA TEXTURA). AUN ASI, LO UNICO IMPORTANTE ES DIFFUSE
-            diffuse 1.00 0.00 0.83 1.00
+            diffuse 0.53 0.53 0.53 1.00
         }
     }
 }
 
 material RedColourMaterial
-{
-    technique 
-    {
-        pass 
-        { // first pass                //OPCIONAL CON LAS TEXTURAS. SI LO QUITAS, DEBES QUITAR COLOUR_OP (EJ ABAJO DE ESTA TEXTURA). AUN ASI, LO UNICO IMPORTANTE ES DIFFUSE
-            diffuse 1.00 0.00 0.00 1.00
-        }
-    }
-}
-
-material PenguinMaterial
-{
-    technique 
-    {
-        diffuse 0.61 0.61 0.61 1.00
-
-        pass 
-        {
-            texture_unit 
-            {
-                texture penguin.jpg
-                colour_op add
-            }
-        }
-    }
-}
-
-material EnemyBulletMaterial
 {
     technique 
     {

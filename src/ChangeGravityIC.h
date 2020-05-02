@@ -17,9 +17,7 @@ namespace Ogre {
 class ChangeGravityIC : public InputComponent {
   private:
     float speed;
-    std::string mLeft;
-    std::string mRight;
-
+    Ogre::Vector3 *colourL_ = nullptr, *colourR_ = nullptr;
     bool movingIzq = true;
 
   public:
@@ -31,8 +29,6 @@ class ChangeGravityIC : public InputComponent {
 
     // Set the speed
     void setSpeed(float _speed);
-    // Set the left material
-    void setMaterialLeft(std::string _mLeft);
-    // Set the right material
-    void setMaterialRight(std::string _mRight);
+    // Set colours
+    void setColours(Ogre::Vector3 colourL, Ogre::Vector3 colourR);
 };
