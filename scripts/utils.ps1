@@ -73,7 +73,8 @@ If ($Init) {
         Write-Host "# Finished in "       -ForegroundColor Green -NoNewLine
         Write-Host ("{0:g}" -f $duration) -ForegroundColor Cyan  -NoNewLine
         Write-Host "."                    -ForegroundColor Green
-    } Else {
+    }
+    Else {
         Write-Host "# Errored with code $LastExitCode in " -ForegroundColor Red  -NoNewLine
         Write-Host ("{0:g}" -f $duration)                  -ForegroundColor Cyan -NoNewLine
         Write-Host "."                                     -ForegroundColor Red
@@ -99,7 +100,8 @@ If ($Update) {
         Write-Host "# Finished in "       -ForegroundColor Green -NoNewLine
         Write-Host ("{0:g}" -f $duration) -ForegroundColor Cyan  -NoNewLine
         Write-Host "."                    -ForegroundColor Green
-    } Else {
+    }
+    Else {
         Write-Host "# Errored with code $LastExitCode in " -ForegroundColor Red  -NoNewLine
         Write-Host ("{0:g}" -f $duration)                  -ForegroundColor Cyan -NoNewLine
         Write-Host "."                                     -ForegroundColor Red
@@ -131,7 +133,8 @@ If ($Upgrade) {
         Write-Host "# Finished in "       -ForegroundColor Green -NoNewLine
         Write-Host ("{0:g}" -f $duration) -ForegroundColor Cyan  -NoNewLine
         Write-Host "."                    -ForegroundColor Green
-    } Else {
+    }
+    Else {
         Write-Host "# Errored with code $LastExitCode in " -ForegroundColor Red  -NoNewLine
         Write-Host ("{0:g}" -f $duration)                  -ForegroundColor Cyan -NoNewLine
         Write-Host "."                                     -ForegroundColor Red
@@ -155,7 +158,8 @@ If ($Format) {
         Write-Host "# Finished in "       -ForegroundColor Green -NoNewLine
         Write-Host ("{0:g}" -f $duration) -ForegroundColor Cyan  -NoNewLine
         Write-Host "."                    -ForegroundColor Green
-    } Else {
+    }
+    Else {
         Write-Host "# Errored with code $LastExitCode in " -ForegroundColor Red  -NoNewLine
         Write-Host ("{0:g}" -f $duration)                  -ForegroundColor Cyan -NoNewLine
         Write-Host "."                                     -ForegroundColor Red
@@ -180,7 +184,8 @@ If ($Build) {
         Write-Host "# Finished in "       -ForegroundColor Green -NoNewLine
         Write-Host ("{0:g}" -f $duration) -ForegroundColor Cyan  -NoNewLine
         Write-Host "."                    -ForegroundColor Green
-    } Else {
+    }
+    Else {
         Write-Host "# Errored with code $LastExitCode in " -ForegroundColor Red  -NoNewLine
         Write-Host ("{0:g}" -f $duration)                  -ForegroundColor Cyan -NoNewLine
         Write-Host "."                                     -ForegroundColor Red
@@ -205,7 +210,8 @@ If ($Release) {
         Write-Host "# Finished in "       -ForegroundColor Green -NoNewLine
         Write-Host ("{0:g}" -f $duration) -ForegroundColor Cyan  -NoNewLine
         Write-Host "."                    -ForegroundColor Green
-    } Else {
+    }
+    Else {
         Write-Host "# Errored with code $LastExitCode in " -ForegroundColor Red  -NoNewLine
         Write-Host ("{0:g}" -f $duration)                  -ForegroundColor Cyan -NoNewLine
         Write-Host "."                                     -ForegroundColor Red
