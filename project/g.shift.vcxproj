@@ -27,9 +27,13 @@
     <ClCompile Include="..\src\DeathStopEC.cpp" />
     <ClCompile Include="..\src\EmitOnStartC.cpp" />
     <ClCompile Include="..\src\gshift.cpp" />
+    <ClCompile Include="..\src\GuiCoinsPickedLabelC.cpp" />
     <ClCompile Include="..\src\OutOfBoundsEC.cpp" />
     <ClCompile Include="..\src\PlayMusicOnStartC.cpp" />
+    <ClCompile Include="..\src\ReachFinalBlockEC.cpp" />
     <ClCompile Include="..\src\SpikeEC.cpp" />
+    <ClCompile Include="..\src\UpperWallEC.cpp" />
+    <ClCompile Include="..\src\WinConditionC.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\ChangeGravityIC.h" />
@@ -39,9 +43,13 @@
     <ClInclude Include="..\src\DeathControllerC.h" />
     <ClInclude Include="..\src\DeathStopEC.h" />
     <ClInclude Include="..\src\EmitOnStartC.h" />
+    <ClInclude Include="..\src\GuiCoinsPickedLabelC.h" />
     <ClInclude Include="..\src\OutOfBoundsEC.h" />
     <ClInclude Include="..\src\PlayMusicOnStartC.h" />
+    <ClInclude Include="..\src\ReachFinalBlockEC.h" />
     <ClInclude Include="..\src\SpikeEC.h" />
+    <ClInclude Include="..\src\UpperWallEC.h" />
+    <ClInclude Include="..\src\WinConditionC.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

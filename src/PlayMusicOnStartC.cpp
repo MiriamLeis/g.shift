@@ -13,6 +13,7 @@
 
 // COMPONENT CODE
 void PlayMusicOnStartC::destroy() {
+    stopCurrentMusic(music);
     setActive(false);
     scene_->getComponentsManager()->eraseDC(this);
 }
@@ -25,6 +26,11 @@ void PlayMusicOnStartC::setMusic(std::string sound) {
     music = sound;
     dynamic_cast<SoundComponent*>(father_->getComponent("SoundComponent"))
         ->playSound(music);
+}
+
+void PlayMusicOnStartC::stopCurrentMusic(std::string sound) {
+    dynamic_cast<SoundComponent*>(father_->getComponent("SoundComponent"))
+        ->stopSound(sound);
 }
 
 // FACTORY INFRASTRUCTURE DEFINITION

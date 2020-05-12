@@ -6,6 +6,11 @@
 #include "RigidbodyPC.h"
 #include "Scene.h"
 
+void SpikeEC::destroy() {
+    setActive(false);
+    scene_->getComponentsManager()->eraseEC(this);
+}
+
 void SpikeEC::checkEvent() {
     if (reinterpret_cast<RigidbodyPC*>(father_->getComponent("RigidbodyPC"))
             ->collidesWith("Player")) {

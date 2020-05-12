@@ -1,0 +1,126 @@
+{
+  "entities": [
+    // Background Picture
+    {
+      "id": "BackgroundPictureMenu",
+      "persistent": false,
+      "components": [
+        {
+          "type": "SkyPlaneObjectC",
+          "attributes": {
+            "normal": "Z",
+            "distance": -120,
+            "bow": 0.0,
+            "material": "LoseMenuBackgroundTexture"
+          }
+        }
+      ]
+    },
+    // Menu Camera
+    {
+      "id": "Camera",
+      "persistent": false,
+      "components": [
+        {
+          "type": "TransformComponent",
+          "attributes": {
+            "position": [ 0, 0, 0 ],
+            "orientation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+          }
+        },
+        {
+          "type": "CameraRC",
+          "attributes": {
+            "node": "nCamera",
+            "viewportColour": [ 0.0, 0.0, 0.0 ],
+            "offset": [ 0, 0, -1000 ],
+            "lookAt": [ 0, 0, -1 ],
+            "targetId": "none"
+          }
+        }
+      ]
+    },
+    // Coins Picked Label
+    {
+      "id": "Coins",
+      "components": [
+        {
+          "type": "GuiLabelComponent",
+          "attributes": {
+            "text": "Coins Picked: ",
+            "position": [ 0.4, 0.6 ],
+            "size": [ 200.0, 50.0 ],
+            "name": "Coins"
+          }
+        }
+      ]
+    },
+    // Coin Counter
+    {
+      "id": "CoinCounter",
+      "components": [
+        {
+          "type": "GuiCoinsPickedLabelC",
+          "attributes": {
+            "position": [ 0.6, 0.6 ],
+            "size": [ 200.0, 50.0 ],
+            "name": "CoinsCounter"
+          }
+        }
+      ]
+    },
+    // Menu Light
+    {
+      "id": "Light",
+      "persistent": false,
+      "components": [
+        {
+          "type": "AmbientLightC",
+          "attributes": {
+            "colour": [ 0.5, 0.0, 0.5 ]
+          }
+        },
+        {
+          "type": "SpotLightRC",
+          "attributes": {
+            "node": "nSpotLight",
+            "colour": [ 1, 1, 1 ],
+            "direction": [ 0, -1, -1 ]
+          }
+        }
+      ]
+    },
+    // Retry Button
+    {
+      "id": "ReturnButton",
+      "components": [
+        {
+          "type": "ChangeAndClearSceneButtonComponent",
+          "attributes": {
+            "text": "Try Again",
+            "position": [ 0.44, 0.7 ],
+            "size": [ 120.0, 40.0 ],
+            "name": "ReturnToGame",
+            "scene": "Game"
+          }
+        }
+      ]
+    },
+    // Main Menu Button
+    {
+      "id": "MainMenuButton",
+      "components": [
+        {
+          "type": "QuitButtonComponent",
+          "attributes": {
+            "text": "Main Menu",
+            "position": [ 0.44, 0.8 ],
+            "size": [ 120.0, 40.0 ],
+            "name": "MainMenu"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -22,6 +22,11 @@ void OutOfBoundsEC::checkEvent() {
     }
 }
 
+void OutOfBoundsEC::destroy() {
+    setActive(false);
+    scene_->getComponentsManager()->eraseEC(this);
+}
+
 void OutOfBoundsEC::setLeftBorder(int _leftBorder) { leftBorder = _leftBorder; }
 
 void OutOfBoundsEC::setRightBorder(int _rightBorder) {

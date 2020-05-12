@@ -18,7 +18,7 @@ void CollectableEC::checkEvent() {
     if (reinterpret_cast<RigidbodyPC*>(father_->getComponent("RigidbodyPC"))
             ->collidesWith("Player")) {
         reinterpret_cast<CoinCounterC*>(
-            scene_->getEntityById("GameManager")->getComponent("CoinCounterC"))
+            scene_->getEntityById("CoinManager")->getComponent("CoinCounterC"))
             ->pickCoin();
         scene_->deleteEntity(father_);
     }

@@ -16,7 +16,6 @@ class ConstantMovementC : public Component {
 
     // getter / Setters
     void setSpeed(float _speed);
-    void setTimer(float _timer);
 
     float getSpeed();
 };

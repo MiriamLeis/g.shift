@@ -5,8 +5,12 @@
 			"file" : "game.json"
 		},
 		{
-			"name" : "DeadMenu",
-			"file" : "dead_menu.json"
+		  "name": "DeadMenu",
+		  "file": "menu_dead.json"
+		},
+		{
+		  "name": "WinMenu",
+		  "file": "menu_win.json"
 		}
 	]
 

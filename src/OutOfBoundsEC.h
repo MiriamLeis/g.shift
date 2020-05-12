@@ -16,6 +16,7 @@ class OutOfBoundsEC : public EventComponent {
 
     virtual void checkEvent();
 
+    virtual void destroy();
     void setLeftBorder(int _leftBorder);
     void setRightBorder(int _rightBorder);
 };

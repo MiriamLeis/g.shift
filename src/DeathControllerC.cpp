@@ -14,9 +14,14 @@ void DeathControllerC::destroy() {
 }
 
 void DeathControllerC::playerDeath() {
-    scene_->changeScene("DeadMenu");
-    dynamic_cast<PlayMusicOnStartC*>(father_->getComponent("PlayMusicOnStartC"))
-        ->setMusic("menuMusic");
+    if (!activated) {
+        activated = true;
+        scene_->changeScene("DeadMenu");
+        dynamic_cast<PlayMusicOnStartC*>(
+            scene_->getEntityById("MusicManager")
+                ->getComponent("PlayMusicOnStartC"))
+            ->setMusic("menuMusic");
+    }
 }
 
 // FACTORY INFRASTRUCTURE

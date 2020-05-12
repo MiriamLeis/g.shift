@@ -11,5 +11,6 @@ class SpikeEC : public EventComponent {
     SpikeEC() = default;
     ~SpikeEC() = default;
 
+    virtual void destroy();
     virtual void checkEvent();
 };

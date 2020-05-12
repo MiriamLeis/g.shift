@@ -19,4 +19,5 @@ class PlayMusicOnStartC : public Component {
     virtual void destroy();
 
     void setMusic(std::string sound);
+    void stopCurrentMusic(std::string sound);
 };
