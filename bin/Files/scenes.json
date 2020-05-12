@@ -1,12 +1,24 @@
-{"scenes":
-	[
+{
+	"scenes": [
 		{
-			"name" : "Game",
-			"file" : "game.json"
+		  "name": "InitialLoad",
+		  "file": "initial_load.json"
 		},
 		{
-		  "name": "DeadMenu",
-		  "file": "menu_dead.json"
+			"name": "Game",
+			"file": "game.json"
+		},
+		{
+			"name": "DeadMenu",
+			"file": "menu_dead.json"
+		},
+		{
+			"name": "mainmenu",
+			"file": "mainmenu.json"
+		},
+		{
+			"name": "options",
+			"file": "options.json"
 		},
 		{
 		  "name": "WinMenu",

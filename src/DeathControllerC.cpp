@@ -20,7 +20,7 @@ void DeathControllerC::playerDeath() {
         dynamic_cast<PlayMusicOnStartC*>(
             scene_->getEntityById("MusicManager")
                 ->getComponent("PlayMusicOnStartC"))
-            ->setMusic("menuMusic");
+            ->setMusic("endMusic");
     }
 }
 

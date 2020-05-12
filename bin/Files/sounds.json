@@ -7,8 +7,14 @@
       "volume": 1.0
     },
     {
-      "id": "menuMusic",
+      "id": "endMusic",
       "filename": "menu.wav",
+      "loop": true,
+      "volume": 1.0
+    },
+    {
+      "id": "menuMusic",
+      "filename": "mainmenu.wav",
       "loop": true,
       "volume": 1.0
     }

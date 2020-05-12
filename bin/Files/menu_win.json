@@ -37,12 +37,13 @@
       "id": "MainMenuButton",
       "components": [
         {
-          "type": "QuitButtonComponent",
+          "type": "ChangeAndClearSceneButtonComponent",
           "attributes": {
             "text": "Main Menu",
             "position": [ 0.45, 0.8 ],
             "size": [ 120.0, 40.0 ],
-            "name": "MainMenu"
+            "name": "MainMenuButton",
+            "scene": "InitialLoad"
           }
         }
       ]

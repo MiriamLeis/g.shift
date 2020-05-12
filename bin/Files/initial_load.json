@@ -1,0 +1,33 @@
+{
+  "entities": [
+    {
+      "id": "MusicManager",
+      "persistent":  true,
+      "components": [
+        {
+          "type": "SoundComponent",
+          "attributes": {
+            "sounds": [ "menuMusic" ]
+          }
+        },
+        {
+          "type": "PlayMusicOnStartC",
+          "attributes": {
+            "sound": "menuMusic"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ChangeScene",
+      "components": [
+        {
+          "type": "ChangeSceneOnStartC",
+          "attributes": {
+            "scene": "mainmenu"
+          }
+        }
+      ]
+    }
+  ]
+}

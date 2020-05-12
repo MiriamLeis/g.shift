@@ -47,6 +47,35 @@ material BackgroundTexture
         } 
     }
 }
+material BackgroundMenuTexture
+{
+    technique 
+    {
+        pass 
+        {
+            texture_unit texture0 
+            { // * ‐> int 0
+                // archivo
+                texture lightMap.jpg 2d 
+                // sólo configuración
+                // wrap (repeat), clamp, mirror
+                tex_address_mode wrap 
+                // de acceso al texel
+                // nearest, linear, bilinear, none
+                filtering bilinear 
+            }
+            texture_unit texture1 
+            { // * ‐> int 1
+                // archivo
+                texture backgroundMenu.png 2d 
+                // sólo configuración
+                tex_address_mode wrap 
+                
+                scroll_anim 0.0 0.05
+            } // de acceso al texel
+        } 
+    }
+}
 
 material PurpleColourMaterial
 {
