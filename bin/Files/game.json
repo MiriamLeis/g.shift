@@ -2,6 +2,31 @@
   "entities": [
     // Game Camera
     {
+      "id": "ExitGame",
+      "persistent": true,
+      "components": [
+        {
+          "type": "GuiLabelComponent",
+          "attributes": {
+            "text": "Leaving...",
+            "position": [ 0.01, 0.95 ],
+            "size": [ 200.0, 50.0 ],
+            "name": "Leaving Game"
+          }
+        },
+        {
+          "type": "EscapePressIC",
+          "attributes": {
+          }
+        },
+        {
+          "type": "ExitWithEscapeEC",
+          "attributes": {
+          }
+        }
+      ]
+    }, // Game Camera
+    {
       "id": "Camera",
       "components": [
         {
@@ -76,7 +101,7 @@
     // Music Manager
     {
       "id": "MusicManager",
-      "persistent":  true,
+      "persistent": true,
       "components": [
         {
           "type": "SoundComponent",
