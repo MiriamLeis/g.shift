@@ -1,4 +1,5 @@
 #include "CoinCounterC.h"
+#include "CoinsLabelC.h"
 #include "ComponentsManager.h"
 #include "Entity.h"
 #include "FactoriesFactory.h"
@@ -20,8 +21,9 @@ void CoinCounterC::setTotalCoins(int total) { totalCoins_ = total; }
 
 void CoinCounterC::pickCoin() {
     coinsPicked_++;
-    std::cout << "\nCOIN PICKED      " << coinsPicked_ << " de " << totalCoins_
-              << "\n"; // PROVISIONAL
+    reinterpret_cast<CoinsLabelC*>(
+        scene_->getEntityById("CoinCounter")->getComponent("CoinsLabelC"))
+        ->updateLabelCoins(coinsPicked_, totalCoins_);
 }
 
 int CoinCounterC::getCoinsPicked() { return coinsPicked_; }

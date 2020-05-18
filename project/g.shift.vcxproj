@@ -22,6 +22,7 @@
     <ClCompile Include="..\src\ChangeGravityIC.cpp" />
     <ClCompile Include="..\src\ChangeSceneOnStartC.cpp" />
     <ClCompile Include="..\src\CoinCounterC.cpp" />
+    <ClCompile Include="..\src\CoinsLabelC.cpp" />
     <ClCompile Include="..\src\CollectableEC.cpp" />
     <ClCompile Include="..\src\ConstantMovementC.cpp" />
     <ClCompile Include="..\src\DeathControllerC.cpp" />
@@ -31,7 +32,9 @@
     <ClCompile Include="..\src\ExitWithEscapeEC.cpp" />
     <ClCompile Include="..\src\gshift.cpp" />
     <ClCompile Include="..\src\GuiCoinsPickedLabelC.cpp" />
+    <ClCompile Include="..\src\MousePropertiesC.cpp" />
     <ClCompile Include="..\src\OutOfBoundsEC.cpp" />
+    <ClCompile Include="..\src\PlayAnimationOnStartC.cpp" />
     <ClCompile Include="..\src\PlayMusicOnStartC.cpp" />
     <ClCompile Include="..\src\ReachFinalBlockEC.cpp" />
     <ClCompile Include="..\src\SpikeEC.cpp" />
@@ -42,6 +45,7 @@
     <ClInclude Include="..\src\ChangeGravityIC.h" />
     <ClInclude Include="..\src\ChangeSceneOnStartC.h" />
     <ClInclude Include="..\src\CoinCounterC.h" />
+    <ClInclude Include="..\src\CoinsLabelC.h" />
     <ClInclude Include="..\src\CollectableEC.h" />
     <ClInclude Include="..\src\ConstantMovementC.h" />
     <ClInclude Include="..\src\DeathControllerC.h" />
@@ -50,7 +54,9 @@
     <ClInclude Include="..\src\EscapePressIC.h" />
     <ClInclude Include="..\src\ExitWithEscapeEC.h" />
     <ClInclude Include="..\src\GuiCoinsPickedLabelC.h" />
+    <ClInclude Include="..\src\MousePropertiesC.h" />
     <ClInclude Include="..\src\OutOfBoundsEC.h" />
+    <ClInclude Include="..\src\PlayAnimationOnStartC.h" />
     <ClInclude Include="..\src\PlayMusicOnStartC.h" />
     <ClInclude Include="..\src\ReachFinalBlockEC.h" />
     <ClInclude Include="..\src\SpikeEC.h" />
