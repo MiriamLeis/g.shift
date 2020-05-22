@@ -1,0 +1,61 @@
+{
+  "entities": [
+    {
+      "id": "Background",
+      "components": [
+        {
+          "type": "SkyPlaneObjectC",
+          "attributes": {
+            "normal": "Z",
+            "distance": -100,
+            "bow": 0.0,
+            "material": "BackgroundMenuTexture"
+          }
+        }
+      ]
+    },
+    {
+      "id": "TitleImage",
+      "components": [
+        {
+          "type": "GuiImageComponent",
+          "attributes": {
+            "image": "TaharezLook/ControlsTitle",
+            "position": [ 0.35, 0.15 ],
+            "size": [ 568.0, 76.0 ],
+            "name": "ControlsTitle"
+          }
+        }
+      ]
+    },
+    {
+      "id": "Controls",
+      "components": [
+        {
+          "type": "GuiImageComponent",
+          "attributes": {
+            "image": "TaharezLook/Controls",
+            "position": [ 0.315, 0.3 ],
+            "size": [ 706.0, 473.0 ],
+            "name": "Controls"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ReturnButton",
+      "components": [
+      {
+        "type": "ChangeSceneButtonComponent",
+        "attributes": {
+          "text": "Return",
+          "position": [ 0.469, 0.8 ],
+          "size": [ 120.0, 40.0 ],
+          "name": "OptionsReturn",
+          "scene": "mainmenu"
+          }
+        }
+      ]
+    }
+  ]
+}

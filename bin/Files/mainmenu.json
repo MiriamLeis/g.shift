@@ -49,7 +49,7 @@
           "type": "ChangeAndClearSceneButtonComponent",
           "attributes": {
             "text": "Play",
-            "position": [ 0.467, 0.6 ],
+            "position": [ 0.469, 0.6 ],
             "size": [ 120.0, 40.0 ],
             "name": "MainMenuPlay",
             "scene": "Game"
@@ -64,10 +64,25 @@
           "type": "ChangeSceneButtonComponent",
           "attributes": {
             "text": "Options",
-            "position": [ 0.467, 0.7 ],
+            "position": [ 0.469, 0.65 ],
             "size": [ 120.0, 40.0 ],
             "name": "MainMenuOptions",
             "scene": "options"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ControlsButton",
+      "components": [
+        {
+          "type": "ChangeSceneButtonComponent",
+          "attributes": {
+            "text": "Controls",
+            "position": [ 0.469, 0.7 ],
+            "size": [ 120.0, 40.0 ],
+            "name": "MainMenuControls",
+            "scene": "Controls"
           }
         }
       ]
@@ -79,183 +94,9 @@
           "type": "QuitButtonComponent",
           "attributes": {
             "text": "Quit",
-            "position": [ 0.467, 0.8 ],
+            "position": [ 0.469, 0.75 ],
             "size": [ 120.0, 40.0 ],
             "name": "MainMenuQuit"
-          }
-        }
-      ]
-    },
-    {
-      "id": "Player",
-      "components": [
-        {
-          "type": "TransformComponent",
-          "attributes": {
-            "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 0.4, 0.4, 0.4 ]
-
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nPlayer",
-            "material": "PurpleColourMaterial"
-          }
-        },
-        {
-          "type": "ParticleC",
-          "attributes": {
-            "particles": [
-              {
-                "name": "Sparks",
-                "particleName": "SparksParticleMenu"
-              }
-            ]
-          }
-        },
-        {
-          "type": "EmitOnStartC",
-          "attributes": {
-            "name": "Sparks"
-          }
-        },
-        {
-          "type": "RigidbodyPC",
-          "attributes": {
-            "position": [ -580, 0, 0 ],
-            "shape": [ 20, 20, 20 ],
-            "mass": 1,
-            "gravity": [ -50, 0, 0 ],
-            "trigger": false,
-            "kinematic": false,
-            "static": false,
-            "friction": 0,
-            "restitution": 0
-          }
-        },
-        {
-          "type": "ChangeGravityIC",
-          "attributes": {
-            "speed": 250,
-            "colourL": [ 0.5, 0, 0.5 ],
-            "colourR": [ 0, 0, 0.8 ]
-          }
-        }
-
-      ]
-    },
-    {
-      "id": "LeftWallFirstSegment1",
-      "components": [
-        {
-          "type": "TransformComponent",
-          "attributes": {
-            "position": [ 700, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 2, 18, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "PinkColourMaterial"
-          }
-        },
-        {
-          "type": "RigidbodyPC",
-          "attributes": {
-            "position": [ 700, 0, 0 ],
-            "shape": [ 100, 900, 50 ],
-            "mass": 0,
-            "gravity": [ 0, 0, 0 ],
-            "trigger": false,
-            "kinematic": false,
-            "static": true,
-            "friction": 0,
-            "restitution": 0
-          }
-        }
-      ]
-    },
-    {
-      "id": "RightWallFirstSegment1",
-      "components": [
-        {
-          "type": "TransformComponent",
-          "attributes": {
-            "position": [ -700, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 2, 18, 1 ]
-          }
-        },
-        {
-          "type": "TridimensionalObjectRC",
-          "attributes": {
-            "mesh": "cube.mesh",
-            "node": "nCube",
-            "material": "BlueColourMaterial"
-          }
-        },
-        {
-          "type": "RigidbodyPC",
-          "attributes": {
-            "position": [ -700, 0, 0 ],
-            "shape": [ 100, 900, 50 ],
-            "mass": 0,
-            "gravity": [ 0, 0, 0 ],
-            "trigger": false,
-            "kinematic": false,
-            "static": true,
-            "friction": 0,
-            "restitution": 0
-          }
-        }
-      ]
-    },
-    {
-      "id": "Light",
-      "components": [
-        {
-          "type": "AmbientLightC",
-          "attributes": {
-            "colour": [ 0.5, 0.0, 0.5 ]
-          }
-        },
-        {
-          "type": "SpotLightRC",
-          "attributes": {
-            "node": "nSpotLight",
-            "colour": [ 1, 1, 1 ],
-            "direction": [ 0, -1, -1 ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "Camera",
-      "components": [
-        {
-          "type": "TransformComponent",
-          "attributes": {
-            "position": [ 0, 0, 0 ],
-            "orientation": [ 0, 0, 0 ],
-            "scale": [ 1, 1, 1 ]
-          }
-        },
-        {
-          "type": "CameraRC",
-          "attributes": {
-            "node": "nCamera",
-            "viewportColour": [ 0.0, 0.0, 0.0 ],
-            "offset": [ 0, 0, 1000 ],
-            "lookAt": [ 0, 0, -1 ],
-            "targetId": "none"
           }
         }
       ]

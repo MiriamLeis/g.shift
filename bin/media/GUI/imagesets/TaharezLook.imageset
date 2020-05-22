@@ -1,4 +1,6 @@
 <Imageset autoScaled="vertical" imagefile="TaharezLook.png" name="TaharezLook" nativeHorzRes="1280" nativeVertRes="720" version="2">
+    <Image height="76" name="ControlsTitle" width="568" xPos="1203" yPos="344" />
+    <Image height="473" name="Controls" width="706" xPos="1771" yPos="344" />
     <Image height="78" name="CoinLabel3" width="181" xPos="2507" yPos="109" />
     <Image height="109" name="CoinLabel2" width="181" xPos="2688" yPos="0" />
     <Image height="109" name="CoinLabel1" width="181" xPos="2507" yPos="0" />

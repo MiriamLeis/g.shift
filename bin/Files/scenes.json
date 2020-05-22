@@ -23,6 +23,10 @@
 		{
 		  "name": "WinMenu",
 		  "file": "menu_win.json"
+		},
+		{
+		  "name": "Controls",
+		  "file": "controls.json"
 		}
 	]
 
