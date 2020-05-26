@@ -64,8 +64,8 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\src\ExitWithEscapeEC.cpp">
-          <Filter>Source Files</Filter>
-              </ClCompile>
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="..\src\ChangeSceneOnStartC.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -126,8 +126,8 @@
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="..\src\ExitWithEscapeEC.h">
-              <Filter>Source Files</Filter>
-              </ClCompile>
+      <Filter>Source Files</Filter>
+    </ClInclude>
     <ClInclude Include="..\src\ChangeSceneOnStartC.h">
       <Filter>Source Files</Filter>
     </ClInclude>
