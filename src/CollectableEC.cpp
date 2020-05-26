@@ -6,6 +6,7 @@
 #include "FactoriesFactory.h"
 #include "RigidbodyPC.h"
 #include "Scene.h"
+#include "SoundComponent.h"
 
 #include <json.h>
 
@@ -20,6 +21,10 @@ void CollectableEC::checkEvent() {
         reinterpret_cast<CoinCounterC*>(
             scene_->getEntityById("CoinManager")->getComponent("CoinCounterC"))
             ->pickCoin();
+        SoundComponent* soundManager =
+            dynamic_cast<SoundComponent*>(scene_->getEntityById("MusicManager")
+                                              ->getComponent("SoundComponent"));
+        soundManager->playSound("coinSound");
         scene_->deleteEntity(father_);
     }
 }

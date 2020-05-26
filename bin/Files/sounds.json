@@ -17,6 +17,12 @@
       "filename": "mainmenu.wav",
       "loop": true,
       "volume": 1.0
+    },
+	{
+      "id": "coinSound",
+      "filename": "coin.wav",
+      "loop": false,
+      "volume": 0.2
     }
   ]
 }
