@@ -62,6 +62,13 @@
     <ClInclude Include="..\src\SpikeEC.h" />
     <ClInclude Include="..\src\UpperWallEC.h" />
     <ClInclude Include="..\src\WinConditionC.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="g.shift.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\bin\media\title2.ico" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
