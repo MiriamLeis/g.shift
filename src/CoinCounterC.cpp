@@ -3,7 +3,6 @@
 #include "ComponentsManager.h"
 #include "Entity.h"
 #include "FactoriesFactory.h"
-#include "RigidbodyPC.h"
 #include "Scene.h"
 
 #include <json.h>
@@ -48,4 +47,4 @@ Component* CoinCounterCFactory::create(Entity* _father, Json::Value& _data,
     return counter;
 };
 
-DEFINE_FACTORY(CoinCounterC);
+DEFINE_FACTORY(CoinCounterC)

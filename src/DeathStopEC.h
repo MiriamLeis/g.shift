@@ -2,12 +2,10 @@
 #include "EventComponent.h"
 #include "Factory.h"
 
-DECLARE_FACTORY(DeathStopEC);
+DECLARE_FACTORY(DeathStopEC)
 
-class DeathStopEC : public EventComponent {
+class DeathStopEC final : public EventComponent {
   public:
-    DeathStopEC();
-    ~DeathStopEC();
-    virtual void checkEvent();
-    virtual void destroy();
+    void checkEvent() override;
+    void destroy() override;
 };

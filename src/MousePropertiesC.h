@@ -3,15 +3,9 @@
 #include "Component.h"
 #include "Factory.h"
 
-#include <string>
+DECLARE_FACTORY(MousePropertiesC)
 
-DECLARE_FACTORY(MousePropertiesC);
-
-class MousePropertiesC : public Component {
-  private:
+class MousePropertiesC final : public Component {
   public:
-    MousePropertiesC() = default;
-    ~MousePropertiesC() = default;
-
-    virtual void destroy();
+    void destroy() override;
 };

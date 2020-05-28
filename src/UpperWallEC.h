@@ -3,13 +3,10 @@
 #include "EventComponent.h"
 #include "Factory.h"
 
-DECLARE_FACTORY(UpperWallEC);
+DECLARE_FACTORY(UpperWallEC)
 
-class UpperWallEC : public EventComponent {
+class UpperWallEC final : public EventComponent {
   public:
-    UpperWallEC() = default;
-    ~UpperWallEC() = default;
-
-    virtual void destroy();
-    virtual void checkEvent();
+    void destroy() override;
+    void checkEvent() override;
 };

@@ -2,20 +2,16 @@
 #include "Component.h"
 #include "Factory.h"
 
-DECLARE_FACTORY(ConstantMovementC);
+DECLARE_FACTORY(ConstantMovementC)
 
-class ConstantMovementC : public Component {
-  private:
-    float speed;
+class ConstantMovementC final : public Component {
+    float speed_ = 0.0f;
 
   public:
-    ConstantMovementC();
-    virtual ~ConstantMovementC();
-
-    virtual void destroy();
+    void destroy() override;
 
     // getter / Setters
-    void setSpeed(float _speed);
+    void setSpeed(float speed);
 
     float getSpeed();
 };

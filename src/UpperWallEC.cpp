@@ -35,4 +35,4 @@ Component* UpperWallECFactory::create(Entity* _father, Json::Value& _data,
     return upperWall;
 }
 
-DEFINE_FACTORY(UpperWallEC);
+DEFINE_FACTORY(UpperWallEC)

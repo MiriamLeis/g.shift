@@ -2,34 +2,32 @@
 #include "ComponentsManager.h"
 #include "Entity.h"
 #include "FactoriesFactory.h"
-#include "OgreEntity.h"
-#include "OgreSDLContext.h"
 #include "Scene.h"
 #include "SoundComponent.h"
-#include "TransformComponent.h"
 
-#include <OgreSceneManager.h>
 #include <json.h>
 
 // COMPONENT CODE
 void PlayMusicOnStartC::destroy() {
-    stopCurrentMusic(music);
+    stopCurrentMusic(music_);
     setActive(false);
     scene_->getComponentsManager()->eraseDC(this);
 }
 
-void PlayMusicOnStartC::setMusic(std::string sound) {
-    if (music != sound) {
-        dynamic_cast<SoundComponent*>(father_->getComponent("SoundComponent"))
-            ->stopSound(music);
-        music = sound;
-        dynamic_cast<SoundComponent*>(father_->getComponent("SoundComponent"))
-            ->playSound(music);
+void PlayMusicOnStartC::setMusic(const std::string& sound) {
+    if (music_ != sound) {
+        reinterpret_cast<SoundComponent*>(
+            father_->getComponent("SoundComponent"))
+            ->stopSound(music_);
+        music_ = sound;
+        reinterpret_cast<SoundComponent*>(
+            father_->getComponent("SoundComponent"))
+            ->playSound(music_);
     }
 }
 
-void PlayMusicOnStartC::stopCurrentMusic(std::string sound) {
-    dynamic_cast<SoundComponent*>(father_->getComponent("SoundComponent"))
+void PlayMusicOnStartC::stopCurrentMusic(const std::string& sound) {
+    reinterpret_cast<SoundComponent*>(father_->getComponent("SoundComponent"))
         ->stopSound(sound);
 }
 
@@ -53,4 +51,4 @@ Component* PlayMusicOnStartCFactory::create(Entity* _father, Json::Value& _data,
     return play;
 }
 
-DEFINE_FACTORY(PlayMusicOnStartC);
+DEFINE_FACTORY(PlayMusicOnStartC)

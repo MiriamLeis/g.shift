@@ -34,4 +34,4 @@ Component* MousePropertiesCFactory::create(Entity* _father, Json::Value& _data,
     return mouse;
 };
 
-DEFINE_FACTORY(MousePropertiesC);
+DEFINE_FACTORY(MousePropertiesC)

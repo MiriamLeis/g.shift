@@ -3,7 +3,6 @@
 #include "DeathControllerC.h"
 #include "Entity.h"
 #include "FactoriesFactory.h"
-#include "OgreRoot.h"
 #include "Scene.h"
 #include "TransformComponent.h"
 
@@ -13,8 +12,8 @@ void OutOfBoundsEC::checkEvent() {
     TransformComponent* transform = reinterpret_cast<TransformComponent*>(
         scene_->getEntityById("Player")->getComponent("TransformComponent"));
 
-    if (transform->getPosition().x > rightBorder ||
-        transform->getPosition().x < leftBorder) {
+    const int x = static_cast<int>(transform->getPosition().x);
+    if (x > rightBorder_ || x < leftBorder_) {
         reinterpret_cast<DeathControllerC*>(
             scene_->getEntityById("GameManager")
                 ->getComponent("DeathControllerC"))
@@ -27,10 +26,12 @@ void OutOfBoundsEC::destroy() {
     scene_->getComponentsManager()->eraseEC(this);
 }
 
-void OutOfBoundsEC::setLeftBorder(int _leftBorder) { leftBorder = _leftBorder; }
+void OutOfBoundsEC::setLeftBorder(const int leftBorder) {
+    leftBorder_ = leftBorder;
+}
 
-void OutOfBoundsEC::setRightBorder(int _rightBorder) {
-    rightBorder = _rightBorder;
+void OutOfBoundsEC::setRightBorder(const int rightBorder) {
+    rightBorder_ = rightBorder;
 }
 
 // FACTORY INFRASTRUCTURE
@@ -57,4 +58,4 @@ Component* OutOfBoundsECFactory::create(Entity* _father, Json::Value& _data,
     return outOfBounds;
 }
 
-DEFINE_FACTORY(OutOfBoundsEC);
+DEFINE_FACTORY(OutOfBoundsEC)

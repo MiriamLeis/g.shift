@@ -3,30 +3,25 @@
 #include "Entity.h"
 #include "ExitWithEscapeEC.h"
 #include "FactoriesFactory.h"
-#include "OgreRoot.h"
 #include "Scene.h"
 #include <iostream>
 #include <json.h>
 
-EscapePressIC::EscapePressIC() {}
-
-EscapePressIC::~EscapePressIC() {}
-
 void EscapePressIC::handleInput(const SDL_Event& _event) {
 
-    if (_event.type == SDL_KEYDOWN && !pressing) {
+    if (_event.type == SDL_KEYDOWN && !pressing_) {
         if (_event.key.keysym.sym == SDLK_ESCAPE) {
             reinterpret_cast<ExitWithEscapeEC*>(
                 father_->getComponent("ExitWithEscapeEC"))
                 ->setPress(true);
-            pressing = true;
+            pressing_ = true;
         }
-    } else if (_event.type == SDL_KEYUP && !up) {
+    } else if (_event.type == SDL_KEYUP && !up_) {
         if (_event.key.keysym.sym == SDLK_ESCAPE) {
             reinterpret_cast<ExitWithEscapeEC*>(
                 father_->getComponent("ExitWithEscapeEC"))
                 ->setPress(false);
-            pressing = false;
+            pressing_ = false;
         }
     }
 }
@@ -45,4 +40,4 @@ Component* EscapePressICFactory::create(Entity* _father, Json::Value& _data,
     return playerShot;
 };
 
-DEFINE_FACTORY(EscapePressIC);
+DEFINE_FACTORY(EscapePressIC)

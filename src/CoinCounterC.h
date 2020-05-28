@@ -3,20 +3,16 @@
 #include "Component.h"
 #include "Factory.h"
 
-DECLARE_FACTORY(CoinCounterC);
+DECLARE_FACTORY(CoinCounterC)
 
-class CoinCounterC : public Component {
-  private:
+class CoinCounterC final : public Component {
     // value of the collectable
-    int totalCoins_;
+    int totalCoins_ = 0;
     // value of the collectable
-    int coinsPicked_;
+    int coinsPicked_ = 0;
 
   public:
-    CoinCounterC() = default;
-    ~CoinCounterC() = default;
-
-    virtual void destroy();
+    void destroy() override;
 
     // return the number of coins that is in the map, picked or not
     int getTotalCoins();

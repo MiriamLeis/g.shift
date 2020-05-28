@@ -3,20 +3,15 @@
 #include "EventComponent.h"
 #include "Factory.h"
 
-DECLARE_FACTORY(OutOfBoundsEC);
+DECLARE_FACTORY(OutOfBoundsEC)
 
-class OutOfBoundsEC : public EventComponent {
-  private:
-    int leftBorder;
-    int rightBorder;
+class OutOfBoundsEC final : public EventComponent {
+    int leftBorder_ = 0;
+    int rightBorder_ = 0;
 
   public:
-    OutOfBoundsEC() = default;
-    ~OutOfBoundsEC() = default;
-
-    virtual void checkEvent();
-
-    virtual void destroy();
-    void setLeftBorder(int _leftBorder);
-    void setRightBorder(int _rightBorder);
+    void checkEvent() override;
+    void destroy() override;
+    void setLeftBorder(int leftBorder);
+    void setRightBorder(int rightBorder);
 };

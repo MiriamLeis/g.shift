@@ -34,11 +34,11 @@ int CollectableEC::getValue() { return value_; }
 void CollectableEC::setValue(int value) { value_ = value; }
 
 void CollectableEC::setAnimations() {
-    animations =
+    animations_ =
         reinterpret_cast<AnimationLC*>(father_->getComponent("AnimationLC"));
 }
 
-void CollectableEC::playAnimation() { animations->startAnimation("idle"); }
+void CollectableEC::playAnimation() { animations_->startAnimation("idle"); }
 
 // FACTORY INFRASTRUCTURE
 CollectableECFactory::CollectableECFactory() = default;
@@ -63,4 +63,4 @@ Component* CollectableECFactory::create(Entity* _father, Json::Value& _data,
     return collectable;
 };
 
-DEFINE_FACTORY(CollectableEC);
+DEFINE_FACTORY(CollectableEC)

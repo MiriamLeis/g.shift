@@ -31,4 +31,4 @@ Component* ChangeSceneOnStartCFactory::create(Entity* _father,
     return controller;
 };
 
-DEFINE_FACTORY(ChangeSceneOnStartC);
+DEFINE_FACTORY(ChangeSceneOnStartC)

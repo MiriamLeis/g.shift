@@ -37,4 +37,4 @@ Component* SpikeECFactory::create(Entity* _father, Json::Value& _data,
     return spikes;
 };
 
-DEFINE_FACTORY(SpikeEC);
+DEFINE_FACTORY(SpikeEC)

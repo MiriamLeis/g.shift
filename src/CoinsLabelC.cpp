@@ -5,10 +5,7 @@
 #include "FactoriesFactory.h"
 #include "GuiContext.h"
 #include "GuiLabelC.h"
-#include "OgreSDLContext.h"
 #include "Scene.h"
-#include <CEGUI/CEGUI.h>
-#include <CEGUI/Window.h>
 #include <iostream>
 #include <json.h>
 
@@ -62,4 +59,4 @@ Component* CoinsLabelCFactory::create(Entity* _father, Json::Value& _data,
     return coins;
 }
 
-DEFINE_FACTORY(CoinsLabelC);
+DEFINE_FACTORY(CoinsLabelC)

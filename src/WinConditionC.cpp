@@ -3,7 +3,6 @@
 #include "Entity.h"
 #include "FactoriesFactory.h"
 #include "PlayMusicOnStartC.h"
-#include "RigidbodyPC.h"
 #include "Scene.h"
 
 #include <json.h>
@@ -14,17 +13,17 @@ void WinConditionC::destroy() {
 }
 
 void WinConditionC::win() {
-    if (!activated) {
-        activated = true;
+    if (!activated_) {
+        activated_ = true;
         scene_->changeScene("WinMenu");
-        dynamic_cast<PlayMusicOnStartC*>(
+        reinterpret_cast<PlayMusicOnStartC*>(
             scene_->getEntityById("MusicManager")
                 ->getComponent("PlayMusicOnStartC"))
             ->setMusic("menuMusic");
     }
 }
 
-// FACTROY INFRASTRUCTURE
+// FACTORY INFRASTRUCTURE
 WinConditionCFactory::WinConditionCFactory() = default;
 
 Component* WinConditionCFactory::create(Entity* _father, Json::Value& _data,
@@ -40,4 +39,4 @@ Component* WinConditionCFactory::create(Entity* _father, Json::Value& _data,
     return winCondition;
 }
 
-DEFINE_FACTORY(WinConditionC);
+DEFINE_FACTORY(WinConditionC)

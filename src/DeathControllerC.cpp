@@ -3,7 +3,6 @@
 #include "Entity.h"
 #include "FactoriesFactory.h"
 #include "PlayMusicOnStartC.h"
-#include "RigidbodyPC.h"
 #include "Scene.h"
 
 #include <json.h>
@@ -14,10 +13,10 @@ void DeathControllerC::destroy() {
 }
 
 void DeathControllerC::playerDeath() {
-    if (!activated) {
-        activated = true;
+    if (!activated_) {
+        activated_ = true;
         scene_->changeScene("DeadMenu");
-        dynamic_cast<PlayMusicOnStartC*>(
+        reinterpret_cast<PlayMusicOnStartC*>(
             scene_->getEntityById("MusicManager")
                 ->getComponent("PlayMusicOnStartC"))
             ->setMusic("endMusic");
@@ -40,4 +39,4 @@ Component* DeathControllerCFactory::create(Entity* _father, Json::Value& _data,
     return controller;
 };
 
-DEFINE_FACTORY(DeathControllerC);
+DEFINE_FACTORY(DeathControllerC)

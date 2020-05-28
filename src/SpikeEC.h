@@ -3,14 +3,10 @@
 #include "EventComponent.h"
 #include "Factory.h"
 
-DECLARE_FACTORY(SpikeEC);
+DECLARE_FACTORY(SpikeEC)
 
-class SpikeEC : public EventComponent {
-  private:
+class SpikeEC final : public EventComponent {
   public:
-    SpikeEC() = default;
-    ~SpikeEC() = default;
-
-    virtual void destroy();
-    virtual void checkEvent();
+    void destroy() override;
+    void checkEvent() override;
 };

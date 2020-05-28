@@ -4,31 +4,26 @@
 #include "ComponentsManager.h"
 #include "Entity.h"
 #include "FactoriesFactory.h"
-#include "OgreRoot.h"
 #include "RigidbodyPC.h"
 #include "Scene.h"
 
 #include <json.h>
-
-ConstantMovementC::ConstantMovementC() {}
-
-ConstantMovementC::~ConstantMovementC() {}
 
 void ConstantMovementC::destroy() {
     setActive(false);
     scene_->getComponentsManager()->eraseDC(this);
 }
 
-void ConstantMovementC::setSpeed(float _speed) {
-    speed = _speed;
+void ConstantMovementC::setSpeed(float speed) {
+    speed_ = speed;
 
     RigidbodyPC* body =
         dynamic_cast<RigidbodyPC*>(father_->getComponent("RigidbodyPC"));
 
-    body->setLinearVelocity(Ogre::Vector3(0.0f, speed, 0.0f));
+    body->setLinearVelocity(Ogre::Vector3(0.0f, speed_, 0.0f));
 }
 
-float ConstantMovementC::getSpeed() { return speed; }
+float ConstantMovementC::getSpeed() { return speed_; }
 
 // FACTORY INFRASTRUCTURE
 
@@ -49,4 +44,4 @@ Component* ConstantMovementCFactory::create(Entity* _father, Json::Value& _data,
     return constantMovementPC;
 };
 
-DEFINE_FACTORY(ConstantMovementC);
+DEFINE_FACTORY(ConstantMovementC)

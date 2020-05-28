@@ -3,13 +3,10 @@
 #include "EventComponent.h"
 #include "Factory.h"
 
-DECLARE_FACTORY(ReachFinalBlockEC);
+DECLARE_FACTORY(ReachFinalBlockEC)
 
-class ReachFinalBlockEC : public EventComponent {
+class ReachFinalBlockEC final : public EventComponent {
   public:
-    ReachFinalBlockEC();
-    ~ReachFinalBlockEC();
-
-    virtual void checkEvent();
-    virtual void destroy();
+    void checkEvent() override;
+    void destroy() override;
 };

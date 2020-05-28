@@ -3,17 +3,12 @@
 #include "Component.h"
 #include "Factory.h"
 
-DECLARE_FACTORY(WinConditionC);
+DECLARE_FACTORY(WinConditionC)
 
-class WinConditionC : public Component {
-  private:
-    bool activated = false;
+class WinConditionC final : public Component {
+    bool activated_ = false;
 
   public:
-    WinConditionC() = default;
-    ~WinConditionC() = default;
-
-    virtual void destroy();
-
+    void destroy() override;
     void win();
 };

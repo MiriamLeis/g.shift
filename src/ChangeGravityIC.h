@@ -2,33 +2,31 @@
 
 #include "Factory.h"
 #include "InputComponent.h"
-#include <string>
-
-#include "Factory.h"
 
 // FACTORY INFRASTRUCTURE DECLARATION
-DECLARE_FACTORY(ChangeGravityIC);
+DECLARE_FACTORY(ChangeGravityIC)
+
 namespace Ogre {
     typedef float Real;
-    template <int dims, typename T> class Vector;
+    template <int Dims, typename T> class Vector;
     typedef Vector<3, Real> Vector3;
 } // namespace Ogre
 
-class ChangeGravityIC : public InputComponent {
-  private:
-    float speed;
-    Ogre::Vector3 *colourL_ = nullptr, *colourR_ = nullptr;
-    bool movingIzq = true;
+class ChangeGravityIC final : public InputComponent {
+    float speed_;
+    Ogre::Vector3* colourL_ = nullptr;
+    Ogre::Vector3* colourR_ = nullptr;
+    bool gravityTowardsLeft_ = true;
 
   public:
     ChangeGravityIC();
-    virtual ~ChangeGravityIC();
+    ~ChangeGravityIC();
 
-    // On space bar down, change the rigibody gravity
-    virtual void handleInput(const SDL_Event& _event);
+    // On space bar down, change the rigidbody gravity
+    void handleInput(const SDL_Event& event) override;
 
     // Set the speed
-    void setSpeed(float _speed);
+    void setSpeed(float speed);
     // Set colours
     void setColours(Ogre::Vector3 colourL, Ogre::Vector3 colourR);
 };

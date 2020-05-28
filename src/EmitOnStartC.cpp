@@ -3,19 +3,16 @@
 #include "Entity.h"
 #include "FactoriesFactory.h"
 #include "ParticleC.h"
-#include "RigidbodyPC.h"
 #include "Scene.h"
-
-#include <json.h>
-
 #include <iostream> // PROVISIONAL
+#include <json.h>
 
 void EmitOnStartC::destroy() {
     setActive(false);
     scene_->getComponentsManager()->eraseDC(this);
 }
 
-void EmitOnStartC::setParticle(std::string name) {
+void EmitOnStartC::setParticle(const std::string& name) {
     reinterpret_cast<ParticleC*>(father_->getComponent("ParticleC"))
         ->emitParticles(name);
 }
@@ -40,4 +37,4 @@ Component* EmitOnStartCFactory::create(Entity* _father, Json::Value& _data,
     return emit;
 };
 
-DEFINE_FACTORY(EmitOnStartC);
+DEFINE_FACTORY(EmitOnStartC)
